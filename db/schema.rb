@@ -11,7 +11,66 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110819132724) do
+ActiveRecord::Schema.define(:version => 20110819134307) do
+
+  create_table "copywriting_phrase_translations", :force => true do |t|
+    t.integer  "copywriting_phrase_id"
+    t.string   "locale"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "copywriting_phrase_translations", ["copywriting_phrase_id"], :name => "index_c8fbec01a288d0aef8ba987126084c4d06953304"
+
+  create_table "copywriting_phrases", :force => true do |t|
+    t.string   "name"
+    t.text     "default"
+    t.text     "value"
+    t.string   "scope"
+    t.integer  "page_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "phrase_type"
+  end
+
+  add_index "copywriting_phrases", ["name", "scope"], :name => "index_copywriting_phrases_on_name_and_scope"
+
+  create_table "event_categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "cached_slug"
+  end
+
+  create_table "event_categorizations", :force => true do |t|
+    t.integer  "event_id"
+    t.integer  "event_category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "event_categorizations", ["event_category_id"], :name => "index_event_categorizations_on_event_category_id"
+  add_index "event_categorizations", ["event_id"], :name => "index_event_categorizations_on_event_id"
+
+  create_table "events", :force => true do |t|
+    t.string   "title"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.string   "venue_name"
+    t.string   "venue_address"
+    t.decimal  "ticket_price",  :precision => 8, :scale => 2
+    t.string   "ticket_link"
+    t.text     "description"
+    t.boolean  "featured"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "cached_slug"
+  end
+
+  add_index "events", ["id"], :name => "index_events_on_id"
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"

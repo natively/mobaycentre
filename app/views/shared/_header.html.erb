@@ -1,0 +1,22 @@
+<div class="ribbon top"></div>
+
+<div class="inner">
+	<%= link_to image_tag("mbcclogo.png", :border=>0), root_path %>
+	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons planners"), root_path %>
+	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons exibitors"), root_path %>
+	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons attendees"), root_path %>
+	<%= render(:partial => "/shared/menu", :locals => {
+	         :dom_id => 'menu',
+	         :css => 'menu'
+	       }) %>
+</div>
+<% if current_page?('/') %>
+	<section id="big_images_banner">
+	  <div class="ribbon bigpicture">
+	    <p class="banner caption">The Carribean's most sophisticated<br>and sought-after convention facilities</p>
+		<%= image_tag("Banner1.jpg", :border=>0,	:class=>"banner left") %>
+		<%= image_tag("Banner3.jpg", :border=>0,	:class=>"banner topright") %>
+		<%= image_tag("Banner2.jpg", :border=>0,	:class=>"banner bottomright") %>
+	  </div>
+	</section>
+<% end %>

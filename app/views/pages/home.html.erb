@@ -1,0 +1,17 @@
+<section id='body_content'>
+  <section id="body_content_left">
+    <div class="inner">
+      <%= raw @page.content_for :body %>
+    </div>
+  </section>
+  <section id="body_content_right">
+  	<div class="inner">
+  	  <h3 class="upcoming_events">Upcoming Events</h3>
+  	  <h3 class="calendar">Calendar of Events</h3>
+  	  <h3 class="rfp">Request for Proposal</h3>
+  	  <h3 class="video_testimonials">Video Testimonials</h3>
+  	  <%= raw @page.content_for :side_body %>
+  	</div>
+  </section>	
+</section>
+<%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>

@@ -95,6 +95,9 @@ GEM
       friendly_id_globalize3 (~> 3.2.1)
       refinerycms-core (= 1.0.4)
     refinerycms-base (1.0.4)
+    refinerycms-calendar (1.1.0)
+      refinerycms-core (>= 0.9.9.1)
+    refinerycms-copywriting (1.0.9)
     refinerycms-core (1.0.4)
       acts_as_indexed (~> 0.7)
       awesome_nested_set (~> 2.0)
@@ -148,5 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   refinerycms (~> 1.0.4)
+  refinerycms-calendar (~> 1.1.0)
+  refinerycms-copywriting
   refinerycms-i18n (~> 1.0.0)
   sqlite3
