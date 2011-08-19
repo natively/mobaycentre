@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110819134307) do
+ActiveRecord::Schema.define(:version => 20110819141101) do
 
   create_table "copywriting_phrase_translations", :force => true do |t|
     t.integer  "copywriting_phrase_id"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20110819134307) do
     t.datetime "end_at"
     t.string   "venue_name"
     t.string   "venue_address"
-    t.decimal  "ticket_price",  :precision => 8, :scale => 2
+    t.decimal  "ticket_price",    :precision => 8, :scale => 2
     t.string   "ticket_link"
     t.text     "description"
     t.boolean  "featured"
@@ -68,9 +68,11 @@ ActiveRecord::Schema.define(:version => 20110819134307) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "cached_slug"
+    t.integer  "unique_event_id"
   end
 
   add_index "events", ["id"], :name => "index_events_on_id"
+  add_index "events", ["unique_event_id"], :name => "index_events_on_unique_event_id", :unique => true
 
   create_table "images", :force => true do |t|
     t.string   "image_mime_type"
