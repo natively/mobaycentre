@@ -1,8 +1,8 @@
-==Welcome to Montego Bay Convention Centre!==
+# Welcome to Montego Bay Convention Centre!
 
-###let's call this version 0.1a
+####let's call this version 0.1a
 
-## There is still much to do:
+### There is still much to do:
 * add content from sourcedocs
 * configure and finalize the eb-xml pull script for the events engine
 * spruce up the frontpage with jQuery
@@ -16,9 +16,9 @@
 * set up /dev/ database
 * FINAL STEP: register mobaycentre.heroku.com as the DNS server
 
-###if you think of more stuff to add feel free
+####if you think of more stuff to add feel free
 
-## THINGS TO REMEMBER:
+### THINGS TO REMEMBER:
 ### git workflow
     git checkout -b name_of_my_branch
     git status (see changes)
