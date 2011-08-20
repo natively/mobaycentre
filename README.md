@@ -1,6 +1,6 @@
 # Welcome to Montego Bay Convention Centre!
 
-####let's call this version 0.1a
+##let's call this version 0.1a
 
 ### There is still much to do:
 * add content from sourcedocs
@@ -18,7 +18,7 @@
 
 ####if you think of more stuff to add feel free
 
-### THINGS TO REMEMBER:
+## THINGS TO REMEMBER:
 ### git workflow
     git checkout -b name_of_my_branch
     git status (see changes)
