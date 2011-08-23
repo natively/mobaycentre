@@ -2,7 +2,6 @@ desc 'this task populates our event table from eb-xml streams'
 
 task :cron => :environment do
   require 'nokogiri'
-  require 'Date'
   require 'open-uri'
 
   # make this the url of your EventListXML stream
