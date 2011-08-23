@@ -17,13 +17,6 @@
 * rebrand refinery with EventBooking logos
 * brand the footer, and figure out what to do with the adspace
 
-### google analytics
-* google analytics code for mobaycentre.com: UA-25297656-1
-* see settings in refinery dashboard to add this
-    
-### calendar xml from EventBooking.com
-* change the url string in lib/cron.rake so it has mobaycentre.com's publicity weblink, not charlotte harbor
-
 ## THINGS TO REMEMBER:
 ### git workflow
     git checkout -b name_of_my_branch
@@ -32,5 +25,9 @@
     git commit -m "Detailed message about the changes"
     git checkout master
     git merge name_of_my_branch
-    git push origin master
-
+    git push origin master    
+### google analytics
+* google analytics code for mobaycentre.com: UA-25297656-1
+* see settings in refinery dashboard to add this
+### calendar xml from EventBooking.com
+* change the url string in lib/cron.rake so it has mobaycentre.com's publicity weblink, not charlotte harbor
