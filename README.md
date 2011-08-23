@@ -12,7 +12,7 @@
 * FINAL STEP: register mobaycentre.heroku.com as the DNS server
 
 ## little things
-* tweak the styling --- remember to use sass --watch public/stylesheets/scss/custom.scss:public/stylesheets/custom.css
+* tweak the styling --- remember to use `sass --watch public/stylesheets/scss/custom.scss:public/stylesheets/custom.css`
 * add favicon
 * rebrand refinery with EventBooking logos
 * brand the footer, and figure out what to do with the adspace
