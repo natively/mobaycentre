@@ -29,5 +29,6 @@
 ### google analytics
 * google analytics code for mobaycentre.com: UA-25297656-1
 * see settings in refinery dashboard to add this
+
 ### calendar xml from EventBooking.com
 * change the url string in lib/cron.rake so it has mobaycentre.com's publicity weblink, not charlotte harbor
