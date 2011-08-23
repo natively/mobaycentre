@@ -18,6 +18,7 @@
   <%= yield :stylesheets %>
   <%= render :partial => '/shared/google_analytics' unless local_request? %>
 
+  <link rel="shortcut icon" href="/favicon.png" />
   <%= javascript_include_tag 'modernizr-min' %>
   <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js' %>
 </head>
