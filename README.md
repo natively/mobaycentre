@@ -1,10 +1,10 @@
 # Welcome to Montego Bay Convention Centre!
 
-##let's call this version 0.1a
+##let's call this version 0.2a
 
 ### There is still much to do:
 * add content from sourcedocs
-* configure and finalize the eb-xml pull script for the events engine
+* ~~configure and finalize the eb-xml pull script for the events engine~~
 * spruce up the frontpage with jQuery
 * tweak the styling --- remember to use sass --watch public/stylesheets/scss/custom.scss:public/stylesheets/custom.css
 * add favicon
@@ -12,6 +12,8 @@
 * brand the footer, and figure out what to do with the adspace
 * add more pages for the flags, see powerpoint
 * add google analytics
+    google analytics code for mobaycentre.com: UA-25297656-1
+    see settings in refinery dashboard to add this
 * automate database backups
 * set up /dev/ database
 * FINAL STEP: register mobaycentre.heroku.com as the DNS server
