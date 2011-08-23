@@ -20,6 +20,11 @@ body {
 
 #body_content_left {
   width: 660px; }
+  #body_content_left h2 {
+    color: light(#3b3c3d, 20%); }
+  #body_content_left p {
+    font-size: 13px;
+    color: #6d6f71; }
 
 #body_content_right {
   width: 300px; }
@@ -115,7 +120,7 @@ div.ribbon {
     box-shadow: 0px -5px 15px #090909; }
     div.ribbon.foot .content {
       margin-left: 30px;
-      text-shadow: 1px 1px 1px #3b3c3d; }
+      text-shadow: 0px 0px 1px #3b3c3d; }
       div.ribbon.foot .content h3 {
         color: #fff; }
       div.ribbon.foot .content ul {
@@ -151,12 +156,32 @@ div.ribbon {
       top: -20px;
       bottom: auto; }
 
-.banner.caption {
+.banner.openqt {
   z-index: 1;
   position: absolute;
+  margin-top: 15px;
+  margin-left: 0px; }
+.banner.caption1 {
+  z-index: 1;
+  position: absolute;
+  font-family: "Arial", sans-serif;
+  font-size: 22px;
   margin-top: 30px;
-  margin-left: 20px;
-  text-shadow: 1px 1px 4px #3b3c3d; }
+  margin-left: 33px;
+  text-shadow: 1px 1px 5px #3b3c3d; }
+.banner.caption2 {
+  z-index: 1;
+  position: absolute;
+  font-family: "Arial", sans-serif;
+  font-size: 22px;
+  margin-top: 55px;
+  margin-left: 50px;
+  text-shadow: 1px 1px 5px #3b3c3d; }
+.banner.closeqt {
+  z-index: 1;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 405px; }
 .banner.left {
   float: left;
   margin-left: -20px;
@@ -177,16 +202,16 @@ header {
   width: 100%; }
   #body_content_right .inner h3.upcoming_events {
     color: #1197d2;
-    text-shadow: 1px 1px 1px #3b3c3d; }
+    #text-shadow: 1px 1px 1px #3b3c3d; }
   #body_content_right .inner h3.calendar {
     color: #9f990b;
-    text-shadow: 1px 1px 1px #3b3c3d; }
+    #text-shadow: 1px 1px 1px #3b3c3d; }
   #body_content_right .inner h3.rfp {
     color: #e05850;
-    text-shadow: 1px 1px 1px #3b3c3d; }
+    #text-shadow: 1px 1px 1px #3b3c3d; }
   #body_content_right .inner h3.video_testimonials {
     color: #00cee8;
-    text-shadow: 1px 1px 1px #3b3c3d; }
+    #text-shadow: 1px 1px 1px #3b3c3d; }
 
 .menu {
   margin-top: 35px; }
@@ -196,6 +221,7 @@ header {
     .menu li:hover {
       background-color: #3b95d0; }
     .menu li.selected {
+      font-weight: normal;
       background-color: #205d85; }
       .menu li.selected:hover {
         background-color: #3b95d0; }
@@ -204,11 +230,12 @@ header {
     .menu li.last {
       margin-right: 7px; }
   .menu a {
-    font-weight: bold;
+    font-family: "Tahoma", sans-serif;
     color: #fee;
     text-decoration: none;
+    font-weight: bold;
     text-shadow: 0px 0px 5px #090909;
-    padding: 18px;
+    padding: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
