@@ -56,6 +56,7 @@ end
 # gem 'refinerycms-blog',         '~> 1.6'
 
 # Add i18n support (optional, you can remove this if you really want to).
+gem 'refinerycms-portfolio',	'~> 0.9.9'
 gem 'refinerycms-inquiries',    '~> 1.0'
 gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'refinerycms-calendar',	'~> 1.1.0'
