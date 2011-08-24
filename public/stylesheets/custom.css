@@ -20,14 +20,16 @@ body {
 
 #body_content_left {
   width: 660px;
-  font-size: 13px;
-  line-height: 1.5;
   color: #3b3c3d; }
   #body_content_left h1, #body_content_left h2 {
     color: #1197d2;
     text-shadow: 1px 1px 1px #6d6f71; }
   #body_content_left h3 {
     color: #1197d2; }
+  #body_content_left p, #body_content_left ol, #body_content_left ul {
+    font-size: 13.5px;
+    line-height: 1.5;
+    letter-spacing: 0.75px; }
 
 #body_content_right {
   width: 300px; }
