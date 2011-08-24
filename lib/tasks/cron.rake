@@ -21,7 +21,8 @@ task :cron => :environment do
     Event.create(
       :title => (e>"event_name").text,
       :unique_event_id => (e>"unique_event_id").text.to_i,
-      :description => (e>"description").text ,
+      :description => (e>"description").text,
+      :venue_name => (e>"venue_name").text,
       :start_at => start_date,
       :end_at => end_date )
   end
