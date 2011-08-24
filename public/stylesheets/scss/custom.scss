@@ -48,11 +48,11 @@ body {
 #body_content_left {
   width:660px;
   h2{
-  color : light($dark-gray,20%);
+  color : lighten($dark-gray,10%);
   }
   p{
   font-size: 13px;
-  color: lighten($dark-gray,20%);
+  color: lighten($dark-gray,10%);
   }
 }
 #body_content_right {
@@ -78,7 +78,7 @@ div.ribbon {
   float:left;
   clear:both;
   color: #fff;
-  @include ribbon-shadow(0px, 5px, 15px);
+  @include ribbon-shadow(0px, 2px, 10px);
   
   &.top {
     height:5px;
@@ -136,7 +136,7 @@ div.ribbon {
       }
     }
     
-    @include ribbon-shadow(0px, -5px, 15px);
+    @include ribbon-shadow(0px, -2px, 10px);
     
     &:before {
       @include ribbon-before-after;
@@ -257,7 +257,7 @@ header {
     padding-top:15px;
     padding-bottom:15px;
     display:block;
-    @include ribbon-shadow(0px, 0px, 2px)
+    @include ribbon-shadow(0px, 0px, 0px)
   }
 }
 footer {
