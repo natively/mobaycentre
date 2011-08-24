@@ -13,18 +13,21 @@ body {
   width: 1075px;
   margin-left: auto;
   margin-right: auto;
-  -moz-box-shadow: 0px 0px 13px #090909;
-  -webkit-box-shadow: 0px 0px 13px #090909;
-  -o-box-shadow: 0px 0px 13px #090909;
-  box-shadow: 0px 0px 13px #090909; }
+  -moz-box-shadow: 0px 0px 10px #3b3c3d;
+  -webkit-box-shadow: 0px 0px 10px #3b3c3d;
+  -o-box-shadow: 0px 0px 10px #3b3c3d;
+  box-shadow: 0px 0px 10px #3b3c3d; }
 
 #body_content_left {
-  width: 660px; }
-  #body_content_left h2 {
-    color: #545657; }
-  #body_content_left p {
-    font-size: 13px;
-    color: #545657; }
+  width: 660px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #3b3c3d; }
+  #body_content_left h1, #body_content_left h2 {
+    color: #1197d2;
+    text-shadow: 1px 1px 1px #6d6f71; }
+  #body_content_left h3 {
+    color: #1197d2; }
 
 #body_content_right {
   width: 300px; }
@@ -46,10 +49,10 @@ div.ribbon {
   float: left;
   clear: both;
   color: #fff;
-  -moz-box-shadow: 0px 2px 10px #090909;
-  -webkit-box-shadow: 0px 2px 10px #090909;
-  -o-box-shadow: 0px 2px 10px #090909;
-  box-shadow: 0px 2px 10px #090909; }
+  -moz-box-shadow: 0px 2px 8px #3b3c3d;
+  -webkit-box-shadow: 0px 2px 8px #3b3c3d;
+  -o-box-shadow: 0px 2px 8px #3b3c3d;
+  box-shadow: 0px 2px 8px #3b3c3d; }
   div.ribbon.top {
     height: 5px;
     background: #3b95d0;
@@ -114,13 +117,13 @@ div.ribbon {
     margin-left: -20px;
     background: #3b95d0;
     padding: 30px 10px 10px 30px;
-    -moz-box-shadow: 0px -2px 10px #090909;
-    -webkit-box-shadow: 0px -2px 10px #090909;
-    -o-box-shadow: 0px -2px 10px #090909;
-    box-shadow: 0px -2px 10px #090909; }
+    -moz-box-shadow: 0px -2px 8px #3b3c3d;
+    -webkit-box-shadow: 0px -2px 8px #3b3c3d;
+    -o-box-shadow: 0px -2px 8px #3b3c3d;
+    box-shadow: 0px -2px 8px #3b3c3d; }
     div.ribbon.foot .content {
       margin-left: 30px;
-      text-shadow: 0px 0px 1px #3b3c3d; }
+      text-shadow: 1px 1px 3px #3b3c3d; }
       div.ribbon.foot .content h3 {
         color: #fff; }
       div.ribbon.foot .content ul {
@@ -231,18 +234,18 @@ header {
       margin-right: 7px; }
   .menu a {
     font-family: "Tahoma", sans-serif;
-    color: #fee;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-    text-shadow: 0px 0px 5px #090909;
+    text-shadow: 1px 1px 3px #090909;
     padding: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
-    -moz-box-shadow: 0px 0px 0px #090909;
-    -webkit-box-shadow: 0px 0px 0px #090909;
-    -o-box-shadow: 0px 0px 0px #090909;
-    box-shadow: 0px 0px 0px #090909; }
+    -moz-box-shadow: 0px 0px 0px #3b3c3d;
+    -webkit-box-shadow: 0px 0px 0px #3b3c3d;
+    -o-box-shadow: 0px 0px 0px #3b3c3d;
+    box-shadow: 0px 0px 0px #3b3c3d; }
 
 footer {
   width: 100%; }
