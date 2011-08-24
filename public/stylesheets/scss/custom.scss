@@ -47,8 +47,6 @@ body {
 }
 #body_content_left {
   width:660px;
-  font-size: 13px;
-  line-height: 1.5;
   color: $dark-gray;
   h1,h2{
     color: $light-blue;
@@ -56,6 +54,11 @@ body {
   }
   h3{
     color: $light-blue;
+  }
+  p,ol,ul{
+  font-size: 13.5px;
+  line-height: 1.5; 
+  letter-spacing: 0.75px;
   }
 }
 #body_content_right {
