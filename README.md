@@ -1,6 +1,47 @@
 # Welcome to Montego Bay Convention Centre!
-
 ####let's call this version 0.2a
+
+# EventBooking and RefineryCMS User Guide
+
+## Introduction
+This is the user guide for http://www.mobaycentre.com.
+
+## Useful Links
+* http://mobaycentre.com
+* http://mobaycentre.com/refinery
+* http://refinerycms.com
+* http://github.com/ebcomalex/mobaycentre
+* http://go.smgbooking.com
+
+## Editing Your Website
+Refinery makes it very simple to edit your website without ever touching the sourcecode.
+
+Log in now at http://mobaycentre.com/refinery
+
+### The Events Tab
+MobayCentre has its own database of upcoming events. In addition, it has also been designed to pull in event data from your `PUBLICLY ANNOUNCED` and `CONFIRMED` events on the go.smgbooking.com calendars. It checks for new events once an hour. At the time of this release it will only pull in the Title, Description, Venue, and Start/End times. It is up to you to add additional information. You can do this by visiting the `Edit Event` page.
+
+#### Creating Events
+The calendar will automatically populate with data from go-smgbooking.com. But you can also create events manually here.  Just click "Add New Event," and you're on your way! Remember, if you create an event manually, and then set it's publicity status to "Announced" on your smgbooking account, it will show up twice!
+
+#### Editing your event
+Click the pencil icon on the right of your event to edit your event
+
+#### Deleting an event
+Deleting an event will remove it from MobayCentre's Events database. If the event originated in your smgbooking account, you must also un-announce it on that event's corresponding publicity tab, or it will just reappear in the mobaycentre.com Events database within the hour.
+
+### Managing Ads
+You have an adspace in the page footer. You can control what goes there on the ads tab in your admin panel.
+*unfinished*
+
+### Uploading Files
+*unfinished*
+
+### Adding Photos to the Gallery
+*unfinished*
+
+## Learning to program Ruby
+*definitely not finished*
 
 ### There is still much to do:
 
@@ -10,6 +51,7 @@
 * add more pages for the flags, see powerpoints
 * set up /dev/ database
 * FINAL STEP: register mobaycentre.heroku.com as the DNS server
+* add "featured events" to front page
 
 ## little things
 * tweak the styling --- remember to use `sass --watch public/stylesheets/scss/custom.scss:public/stylesheets/custom.css`
