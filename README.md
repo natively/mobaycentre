@@ -19,13 +19,15 @@ Refinery makes it very simple to edit your website without ever touching the sou
 Log in now at http://mobaycentre.com/refinery
 
 ### The Events Tab
-MobayCentre has its own database of upcoming events. In addition, it has also been designed to pull in event data from your `PUBLICLY ANNOUNCED` and `CONFIRMED` events on the go.smgbooking.com calendars. It checks for new events once an hour. At the time of this release it will only pull in the Title, Description, Venue, and Start/End times. It is up to you to add additional information. You can do this by visiting the `Edit Event` page.
+MobayCentre has its own database of upcoming events. In addition, it has also been designed to pull in event data from your `PUBLICLY ANNOUNCED` and `CONFIRMED` events on the go.smgbooking.com calendars. It checks for new events once an hour. At the time of this release it will only pull in the Title, Description, Venue, and Start/End times. 
+
+It is up to you to add additional information and mark Featured Events. You can do this by visiting the `Edit Event` page.
 
 #### Creating Events
 The calendar will automatically populate with data from go-smgbooking.com. But you can also create events manually here.  Just click "Add New Event," and you're on your way! Remember, if you create an event manually, and then set it's publicity status to "Announced" on your smgbooking account, it will show up twice!
 
 #### Editing your event
-Click the pencil icon on the right of your event to edit your event
+Click the pencil icon on the right of your event to edit your event. Mark an event as "Featured" if you want it to appear on the home page. Further integration with the EventBooking publicity tab is planned.
 
 #### Deleting an event
 Deleting an event will remove it from MobayCentre's Events database. If the event originated in your smgbooking account, you must also un-announce it on that event's corresponding publicity tab, or it will just reappear in the mobaycentre.com Events database within the hour.
