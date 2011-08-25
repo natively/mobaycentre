@@ -280,6 +280,9 @@ header {
     &.last {
       margin-right: 7px;
     }
+    ul {
+      display:none;
+    }
   }
   a {
     font-family:"Tahoma", sans-serif;
@@ -301,9 +304,26 @@ footer {
   height:90px;
 }
 
-::selection {
-        background: lighten($blue, 40%); /* Safari */
-        }
-::-moz-selection {
-        background: $blue; /* Firefox */
+div.event{
+  section {
+    &.event_image {
+      float:none; 
+    }
+    &.start_end {
+      p {
+        margin-bottom:1em;
+        color:lighten($dark-gray, 30%);
+        font-size:10px;
+        font-style:italic;
+      }
+    }
+  }
+
+  h1 {
+    font-size:2em;
+    a {
+      text-decoration:none;
+    }
+  }
 }
+
