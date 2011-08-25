@@ -58,6 +58,15 @@
   end
 -%>
 <section id='body_content'<%= " class='#{css.join(' ')}'" if css.present? %>>
+  <section id='side_nav' style="float:right;">
+    <% if (children = @page.root.children).present? -%> 
+      <ul class='submenu'>
+        <%= render :partial => '/shared/menu_branch', 
+                   :collection => children,
+                   :locals => { :apply_css => 'selected', :hide_children => false } -%>
+      </ul>
+    <% end -%>  
+  </section>
   <%= raw sections.map{|section| section[:html]}.join("\n") -%>
 </section>
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
