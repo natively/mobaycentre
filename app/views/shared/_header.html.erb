@@ -23,3 +23,21 @@
 	  </div>
 	</section>
 <% end %>
+
+
+
+<% if current_page?('/the-centre') %>
+	<section id="banner_centre">
+	  <div class="ribbon banner">
+		<%= image_tag("centre.jpg", :border=>0,	:class=>"banner left") %>
+	  </div>
+	</section>
+<% end %>
+
+<% if current_page?('/services') %>
+	<section id="banner_centre">
+	  <div class="ribbon banner">
+		<%= image_tag("services.jpg", :border=>0,	:class=>"banner left") %>
+	  </div>
+	</section>
+<% end %>

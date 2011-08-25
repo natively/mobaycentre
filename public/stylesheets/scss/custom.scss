@@ -48,12 +48,20 @@ body {
 #body_content_left {
   width:660px;
   color: $dark-gray;
-  h1,h2{
-    color: $light-blue;
-    text-shadow: 1px 1px 1px lighten($dark-gray,20%);
+  h1{
+    color: $blue;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  h2{
+    color: $blue;
+    font-size: 20px;
+    font-weight: bold;
   }
   h3{
-    color: $light-blue;
+    color: $dark-gray;
+    font-size: 18px;
+    font-weight: bold;
   }
   p,ol,ul{
   font-size: 13.5px;
@@ -106,6 +114,26 @@ div.ribbon {
   }
   &.bigpicture {
     height:400px;
+    padding: 10px 10px 10px 30px;
+    margin-left:-20px;
+    margin-bottom:10px;
+    background: #fff;
+    font-size:1.5em;
+    &:before {
+      @include ribbon-before-after;
+      background: url(../images/photoleft.png);
+      left:0;
+      right:auto;
+    }
+    &:after {
+      @include ribbon-before-after;
+      background: url(../images/photoright.png);
+      left: auto;
+      right: 0;
+    }
+  }
+  &.banner {
+    height:200px;
     padding: 10px 10px 10px 30px;
     margin-left:-20px;
     margin-bottom:10px;
