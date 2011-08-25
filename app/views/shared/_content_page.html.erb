@@ -58,7 +58,7 @@
   end
 -%>
 <section id='body_content'<%= " class='#{css.join(' ')}'" if css.present? %>>
-  <section id='side_nav' style="float:right;">
+  <section id='side_nav'>
     <%= render :partial => '/shared/sidenav' %>
   </section>
   <%= raw sections.map{|section| section[:html]}.join("\n") -%>
