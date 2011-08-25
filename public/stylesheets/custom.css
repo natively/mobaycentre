@@ -234,6 +234,8 @@ header {
       margin-left: 7px; }
     .menu li.last {
       margin-right: 7px; }
+    .menu li ul {
+      display: none; }
   .menu a {
     font-family: "Tahoma", sans-serif;
     color: #fff;
@@ -255,10 +257,9 @@ footer {
 .logos {
   height: 90px; }
 
-::selection {
-  background: #e0eef7;
-  /* Safari */ }
-
-::-moz-selection {
-  background: #3b95d0;
-  /* Firefox */ }
+.event section.event_image {
+  float: none; }
+.event h1 {
+  font-size: 2em; }
+  .event h1 a {
+    text-decoration: none; }

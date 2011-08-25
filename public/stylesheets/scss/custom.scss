@@ -252,6 +252,9 @@ header {
     &.last {
       margin-right: 7px;
     }
+    ul {
+      display:none;
+    }
   }
   a {
     font-family:"Tahoma", sans-serif;
@@ -273,9 +276,15 @@ footer {
   height:90px;
 }
 
-::selection {
-        background: lighten($blue, 40%); /* Safari */
-        }
-::-moz-selection {
-        background: $blue; /* Firefox */
+.event{
+  section.event_image{
+    float:none; 
+  }  
+  h1 {
+    font-size:2em;
+    a {
+      text-decoration:none;
+    }
+  }
 }
+
