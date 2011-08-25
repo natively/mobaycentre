@@ -7,6 +7,7 @@
   <section id="body_content_right">
   	<div class="inner">
   	  <h3 class="upcoming_events">Upcoming Events</h3>
+        <%= render :partial => 'featured_event', :collection => @featured_events -%>
   	  <h3 class="calendar">Calendar of Events</h3>
   	  <h3 class="rfp">Request for Proposal</h3>
   	  <h3 class="video_testimonials">Video Testimonials</h3>
@@ -15,9 +16,3 @@
   </section>	
 </section>
 <%= render :partial => '/shared/draft_page_message' unless @page.nil? or @page.live? -%>
-<% if (children = @page.root.children).present? -%> 
-  <ul class='submenu'> 
-    <%= render :partial => '/shared/menu_branch', :collection => children,
-               :locals => {  :apply_css => "selected", :hide_children => false } -%> 
-  </ul> 
-<% end -%>
