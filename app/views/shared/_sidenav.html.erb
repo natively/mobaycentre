@@ -1,5 +1,5 @@
 <% if (children = @page.root.children).present? -%>
-  <% children.keep_if { |c| c.in_menu? -%>
+  <% children.keep_if { |c| c.in_menu? } -%>
   <ul class='submenu'> 
     <%= render :partial => '/shared/menu_branch', :collection => children,
                :locals => {  :apply_css => "selected", :hide_children => false } -%> 
