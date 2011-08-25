@@ -257,9 +257,14 @@ footer {
 .logos {
   height: 90px; }
 
-.event section.event_image {
+div.event section.event_image {
   float: none; }
-.event h1 {
+div.event section.start_end p {
+  margin-bottom: 1em;
+  color: #87898a;
+  font-size: 10px;
+  font-style: italic; }
+div.event h1 {
   font-size: 2em; }
-  .event h1 a {
+  div.event h1 a {
     text-decoration: none; }
