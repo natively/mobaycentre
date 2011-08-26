@@ -63,3 +63,5 @@ gem 'refinerycms-calendar',	'~> 1.1.0'
 gem 'refinerycms-copywriting'
 gem 'refinerycms-page-images',	'~> 1.0'
 # END USER DEFINED
+
+gem 'refinerycms-advertisements', '1.0', :path => 'vendor/engines'

@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    advertisements:
+      title: Advertisements
+  admin:
+    advertisements:
+      actions:
+        create_new: Maak een nieuwe Advertisement
+        reorder: Wijzig de volgorde van de Advertisements
+        reorder_done: Klaar met het wijzingen van de volgorde van de Advertisements
+      records:
+        title: Advertisements
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Advertisements. Druk op 'Maak een nieuwe Advertisement' om de eerste aan te maken.
+      advertisement:
+        view_live_html: Bekijk deze advertisement op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze advertisement
+        delete: Verwijder deze advertisement voor eeuwig
+  advertisements:
+    show:
+      other: Andere Advertisements

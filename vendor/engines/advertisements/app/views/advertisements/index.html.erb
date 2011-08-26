@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="advertisements">
+    <% @advertisements.each do |advertisement| %>
+      <li>
+        <%= link_to advertisement.title, advertisement_path(advertisement) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

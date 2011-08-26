@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    advertisements:
+      title: Advertisements
+  admin:
+    advertisements:
+      actions:
+        create_new: Lag en ny Advertisement
+        reorder: Endre rekkefølgen på Advertisements
+        reorder_done: Ferdig å endre rekkefølgen Advertisements
+      records:
+        title: Advertisements
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Advertisements enda. Klikk på "Lag en ny Advertisement" for å legge til din første advertisement.
+      advertisement:
+        view_live_html: Vis hvordan denne advertisement ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne advertisement
+        delete: Fjern denne advertisement permanent
+  advertisements:
+    show:
+      other: Andre Advertisements
