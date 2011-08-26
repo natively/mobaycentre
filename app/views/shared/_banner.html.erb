@@ -14,7 +14,7 @@
   <section id="banner_centre">
     <div class="ribbon banner">
         <% @page.images.each do |i| -%>
-          <%= image_tag i.thumbnail(1095,200).url -%>
+          <%= image_tag i.thumbnail("1095x200").url -%>
         <% end -%>
     </div>
   </section>  
