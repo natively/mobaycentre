@@ -98,7 +98,6 @@ div.ribbon {
       right: 0;
       left: auto; }
   div.ribbon.bigpicture {
-    height: 400px;
     padding: 10px 10px 10px 30px;
     margin-left: -20px;
     margin-bottom: 10px;
@@ -117,37 +116,6 @@ div.ribbon {
       left: 0;
       right: auto; }
     div.ribbon.bigpicture:after {
-      content: " ";
-      display: block;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      bottom: 0;
-      margin-bottom: -20px;
-      z-index: 2;
-      background: url(../images/photoright.png);
-      left: auto;
-      right: 0; }
-  div.ribbon.banner {
-    height: 200px;
-    padding: 10px 10px 10px 30px;
-    margin-left: -20px;
-    margin-bottom: 10px;
-    background: #fff;
-    font-size: 1.5em; }
-    div.ribbon.banner:before {
-      content: " ";
-      display: block;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      bottom: 0;
-      margin-bottom: -20px;
-      z-index: 2;
-      background: url(../images/photoleft.png);
-      left: 0;
-      right: auto; }
-    div.ribbon.banner:after {
       content: " ";
       display: block;
       width: 20px;
