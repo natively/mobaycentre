@@ -8,9 +8,9 @@
     <%= image_tag("Banner3.jpg", :border=>0,  :class=>"banner topright") %>
     <%= image_tag("Banner2.jpg", :border=>0,  :class=>"banner bottomright") %>
   </div>
-<% else %>
+<% elsif (p = @page.images).present? %>
   <div class="ribbon bigpicture">
-    <% @page.images.each do |i| -%>
+    <% p.each do |i| -%>
       <%= image_tag i.thumbnail("1095x200").url, :class => "banner left" -%>
     <% end -%>
   </div>
