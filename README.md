@@ -9,6 +9,7 @@
  * Content
  * Mobay XML link
  * Set up User's account
+ * Custom Forms
  * TEST. EVERYTHING.
 
 # EventBooking and RefineryCMS User Guide
