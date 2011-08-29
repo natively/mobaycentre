@@ -43,7 +43,11 @@ body {
   #body_content_left p, #body_content_left ol, #body_content_left ul {
     font-size: 13.5px;
     line-height: 1.5;
-    letter-spacing: 0.75px; }
+    letter-spacing: 0.5px; }
+  #body_content_left a {
+    text-decoration: none; }
+    #body_content_left a:hover {
+      text-decoration: underline; }
 
 #body_content_right {
   width: 300px; }
@@ -188,13 +192,7 @@ div.ribbon {
 
 .banner.left {
   float: left;
-  margin-left: -20px;
-  margin-right: auto; }
-.banner.topright {
-  float: right; }
-.banner.bottomright {
-  float: right;
-  margin-top: 10px; }
+  margin-left: -20px; }
 
 header {
   width: 100%; }
@@ -241,7 +239,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     text-shadow: 1px 1px 3px #090909;
-    padding: 16px;
+    padding: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
