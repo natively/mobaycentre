@@ -6,7 +6,8 @@ body {
   font-family: "Arial", sans-serif; }
 
 #page {
-  width: 960px; }
+  width: 960px;
+  min-height: 500px; }
 
 #page_container {
   background-color: #fff;
@@ -18,9 +19,15 @@ body {
   -o-box-shadow: 0px 0px 10px #3b3c3d;
   box-shadow: 0px 0px 10px #3b3c3d; }
 
+#body_content h1 {
+  color: #3b95d0;
+  font-size: 26px;
+  font-weight: bold; }
+
 #body_content_left {
-  width: 660px;
-  color: #3b3c3d; }
+  max-width: 660px;
+  color: #3b3c3d;
+  margin-bottom: 25px; }
   #body_content_left h1 {
     color: #3b95d0;
     font-size: 24px;
@@ -30,7 +37,7 @@ body {
     font-size: 20px;
     font-weight: bold; }
   #body_content_left h3 {
-    color: #3b3c3d;
+    color: #3b95d0;
     font-size: 18px;
     font-weight: bold; }
   #body_content_left p, #body_content_left ol, #body_content_left ul {
@@ -42,6 +49,7 @@ body {
   width: 300px; }
 
 #side_nav {
+  margin-top: 10px;
   width: 300px;
   float: right; }
   #side_nav ul {
@@ -49,7 +57,7 @@ body {
     line-height: 1.5; }
   #side_nav a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold; }
 
 img.hangribbons {
@@ -105,7 +113,7 @@ div.ribbon {
   div.ribbon.bigpicture {
     padding: 10px 10px 10px 30px;
     margin-left: -20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     background: #fff;
     font-size: 1.5em; }
     div.ribbon.bigpicture:before {
@@ -142,7 +150,7 @@ div.ribbon {
     box-shadow: 0px -2px 8px #3b3c3d; }
     div.ribbon.foot .content {
       margin-left: 30px;
-      text-shadow: 1px 1px 3px #3b3c3d; }
+      text-shadow: 0px 0px 3px #3b3c3d; }
       div.ribbon.foot .content h3 {
         color: #fff; }
       div.ribbon.foot .content ul {
