@@ -280,3 +280,7 @@ div.event h1 {
   font-size: 2em; }
   div.event h1 a {
     text-decoration: none; }
+
+.ads {
+  display: none;
+  float: right; }
