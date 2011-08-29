@@ -64,16 +64,39 @@ body {
     font-size: 18px;
     font-weight: bold; }
 
-img.hangribbons {
-  width: 150px;
-  height: 110px; }
-  img.hangribbons.planners {
-    margin-left: 225px;
-    background: url(../images/menusprite_trans.png) 0px 0px; }
-  img.hangribbons.exibitors {
-    background: url(../images/menusprite_trans.png) -150px 0px; }
-  img.hangribbons.attendees {
-    background: url(../images/menusprite_trans.png) -300px 0px; }
+.logo img {
+  margin-top: 20px; }
+
+.hangribbons {
+  float: right;
+  font-size: 1.5em; }
+  .hangribbons ul {
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0; }
+    .hangribbons ul li {
+      height: 60px;
+      width: 155px;
+      float: left;
+      padding-top: 1em;
+      position: relative;
+      text-align: center;
+      background: url("../images/flag.png") no-repeat center bottom; }
+      .hangribbons ul li a {
+        color: #fff;
+        text-decoration: none; }
+      .hangribbons ul li .inner {
+        margin: 0;
+        z-index: 1;
+        font-size: 100%;
+        display: none;
+        position: absolute;
+        background: url("../images/flag.png") no-repeat center bottom;
+        height: 180px;
+        width: 100%; }
 
 div.ribbon {
   position: relative;
@@ -250,9 +273,6 @@ header {
 
 footer {
   width: 100%; }
-
-.logos {
-  height: 90px; }
 
 div.event section.event_image {
   float: none; }

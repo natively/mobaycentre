@@ -11,4 +11,9 @@ jQuery.extend(jQuery.expr[":"],
 
 $(document).ready(function() {
   $('.ads:random').show();
+  $('.hangribbons li').bind('mouseenter', function(){
+    $(this).find('.inner').show();
+  }).bind('mouseleave', function(){
+    $(this).find('.inner').hide();
+  });
 });
