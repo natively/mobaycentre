@@ -298,6 +298,29 @@ div.event{
     }
   }
 }
+.upcoming_events {
+  ul {
+    list-style:none;
+    padding:0px;
+    margin: 0;
+    margin-bottom:10px;
+    -webkit-padding-start:0px;
+    li {
+      line-height:1.25em;
+      color:$dark-gray;
+      &.date {
+        font-weight:bold;
+        font-size:1.25em;
+      }
+    }
+  }
+  a {
+    text-decoration:none;
+    font-weight:bold;
+    color: $blue;
+    font-size:1em;
+  }
+}
 .ads
 {
   display:none;

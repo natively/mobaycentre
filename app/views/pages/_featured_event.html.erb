@@ -1,6 +1,16 @@
 <section class="upcoming_events">
   <%= div_for featured_event,  do -%>
-    <%= link_to featured_event.title, featured_event -%>
-    Starts at: <%= featured_event.start_at.strftime('%b %e. %Y %l:%M %p') %>
+    <ul>
+      <li class="date">
+        <% if featured_event.end_at.strftime('%b %e') == featured_event.start_at.strftime('%b %e') %>
+          <%= featured_event.start_at.strftime('%b %e').upcase %>
+        <% else %>
+          <%= (featured_event.start_at.strftime('%b %e') + ' - ' + featured_event.end_at.strftime('%b %e')).upcase %>
+        <% end %>
+      </li>
+      <li><%= featured_event.title.upcase %></li>
+      <li><%= featured_event.start_at.strftime('%l %P') + ' - ' + featured_event.end_at.strftime('%l %P')%></li>
+      <li><%= link_to '> DETAILS', featured_event -%></li>
+    </ul>
   <% end -%>
 </section>
