@@ -78,7 +78,13 @@ body {
   p,ol,ul{
   font-size: 13.5px;
   line-height: 1.5; 
-  letter-spacing: 0.75px;
+  letter-spacing: 0.5px;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 #body_content_right {
@@ -220,14 +226,6 @@ div.ribbon {
 	&.left {
 	float:left;
 	margin-left:-20px;
-	margin-right:auto;
-	}
-	&.topright {
-	float:right;
-	}
-	&.bottomright {
-	float:right;
-	margin-top:10px;
 	}
 }
 header { 
@@ -286,7 +284,7 @@ header {
     text-decoration:none;
     font-weight: bold;
     text-shadow: 1px 1px 3px darken($dark-gray, 20%);
-    padding:16px;
+    padding:17px;
     padding-top:15px;
     padding-bottom:15px;
     display:block;

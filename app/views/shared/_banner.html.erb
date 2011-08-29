@@ -1,8 +1,6 @@
 <% if current_page?('/') %>
   <div class="ribbon bigpicture">
-    <%= image_tag("Banner1.jpg", :border=>0,  :class=>"banner left") %>
-    <%= image_tag("Banner3.jpg", :border=>0,  :class=>"banner topright") %>
-    <%= image_tag("Banner2.jpg", :border=>0,  :class=>"banner bottomright") %>
+    <%= image_tag("a.jpg", :border=>0,  :class=>"banner left") %>
   </div>
 <% elsif (p = @page.images).present? %>
   <div class="ribbon bigpicture">
