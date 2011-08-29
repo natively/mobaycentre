@@ -11,7 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110824193929) do
+ActiveRecord::Schema.define(:version => 20110826153815) do
+
+  create_table "advertisements", :force => true do |t|
+    t.string   "title"
+    t.string   "caption"
+    t.string   "link_url"
+    t.integer  "picture_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "advertisements", ["id"], :name => "index_advertisements_on_id"
 
   create_table "copywriting_phrase_translations", :force => true do |t|
     t.integer  "copywriting_phrase_id"

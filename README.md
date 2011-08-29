@@ -1,5 +1,16 @@
-# Welcome to Montego Bay Convention Centre!
-####let's call this version 0.2a
+# Welcome to Montego Bay Convention Centre! #
+
+#### Version 0.5 - Alpha Release Candidate
+
+### Launch Staging ###
+ * Rotating Banner Ads
+ * Javascript baby!
+ * Brand Website
+ * Content
+ * Mobay XML link
+ * Set up User's account
+ * Custom Forms
+ * TEST. EVERYTHING.
 
 # EventBooking and RefineryCMS User Guide
 

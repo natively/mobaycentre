@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    advertisements:
+      title: Advertisements
+  admin:
+    advertisements:
+      actions:
+        create_new: CREATE NEW Advertisement
+        reorder: REORDR Advertisements
+        reorder_done: DUN REORDERIN Advertisements
+      records:
+        title: Advertisements
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Advertisements YET. CLICK "CREATE NEW Advertisement" 2 ADD UR FURST advertisement.
+      advertisement:
+        view_live_html: VIEW DIS advertisement LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS advertisement
+        delete: REMOOV DIS advertisement FOREVR
+  advertisements:
+    show:
+      other: OTHR Advertisements

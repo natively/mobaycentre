@@ -1,0 +1,39 @@
+<%= form_for [:admin, @advertisement] do |f| -%>
+  <%= render :partial => "/shared/admin/error_messages", :locals => {
+          :object => @advertisement,
+          :include_object_name => true
+        } %>
+  
+  <div class='field'>
+    <%= f.label :title -%>
+    <%= f.text_field :title, :class => 'larger widest'  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :caption -%>
+    <%= f.text_field :caption  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :link_url -%>
+    <%= f.text_field :link_url  -%>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :picture -%>
+    <%= render :partial => "/shared/admin/image_picker", :locals => {
+          :f => f,
+          :field => :picture_id,
+          :image => @advertisement.picture,
+          :toggle_image_display => false
+        } %>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions",
+              :locals => {
+                :f => f,
+                :continue_editing => false,
+                :delete_title => t('delete', :scope => 'admin.advertisements.advertisement'),
+                :delete_confirmation => t('message', :scope => 'shared.admin.delete', :title => @advertisement.title)
+              } %>
+<% end -%>
