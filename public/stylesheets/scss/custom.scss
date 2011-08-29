@@ -152,6 +152,7 @@ div.ribbon {
     background:$blue;
     padding:10px 10px 10px 30px;
     margin-left:-20px;
+    z-index:2;
     &:before {
       @include ribbon-before-after;
       background:url(../images/topleft.png);

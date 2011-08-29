@@ -112,7 +112,8 @@ div.ribbon {
     height: 5px;
     background: #3b95d0;
     padding: 10px 10px 10px 30px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    z-index: 2; }
     div.ribbon.top:before {
       content: " ";
       display: block;

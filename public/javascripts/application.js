@@ -16,4 +16,7 @@ $(document).ready(function() {
   }).bind('mouseleave', function(){
     $(this).find('.inner').hide();
   });
+  $('.ribbon.bigpicture img').hide().load(function() {
+    $(this).fadeIn(1000);
+  });
 });
