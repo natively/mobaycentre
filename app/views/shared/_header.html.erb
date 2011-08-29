@@ -2,9 +2,9 @@
 
 <div class="inner">
 	<%= link_to image_tag("mbcclogo.png", :border=>0), root_path %>
-	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons planners"), root_path %>
-	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons exibitors"), root_path %>
-	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons attendees"), root_path %>
+	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons planners"), 'planners' %>
+	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons exibitors"), 'exhibitors' %>
+	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons attendees"), 'attendees' %>
 	<%= render(:partial => "/shared/menu", :locals => {
 	         :dom_id => 'menu',
 	         :css => 'menu'
