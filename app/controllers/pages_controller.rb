@@ -29,7 +29,8 @@ class PagesController < ApplicationController
       elsif @page.link_url.present?
         redirect_to @page.link_url and return
       end
-    else
+    else1afanta
+    
       error_404
     end
   end

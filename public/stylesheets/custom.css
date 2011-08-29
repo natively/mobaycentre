@@ -281,6 +281,24 @@ div.event h1 {
   div.event h1 a {
     text-decoration: none; }
 
+.upcoming_events ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  margin-bottom: 10px;
+  -webkit-padding-start: 0px; }
+  .upcoming_events ul li {
+    line-height: 1.25em;
+    color: #3b3c3d; }
+    .upcoming_events ul li.date {
+      font-weight: bold;
+      font-size: 1.25em; }
+.upcoming_events a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3b95d0;
+  font-size: 1em; }
+
 .ads {
   display: none;
   float: right; }
