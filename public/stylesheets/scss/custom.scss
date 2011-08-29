@@ -26,10 +26,13 @@ $sky: #00cee8;
   box-shadow:$x $y $b $color;
 }
 
-@mixin hangribbon($x, $y) {
-  background: url(../images/menusprite_trans.png) $x $y;
+@mixin kill-webkit{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
 }
-
 /* Content */
 body {
   background: url(../images/bgimg.png);
@@ -95,18 +98,39 @@ body {
     font-weight: bold;
   }
 }
-img.hangribbons {
-  width:150px;
-  height:110px;
-  &.planners {
-    margin-left:225px;
-    @include hangribbon(0px,0px)
-  }
-  &.exibitors {
-    @include hangribbon(-150px, 0px)
-  }
-  &.attendees {
-    @include hangribbon(-300px, 0px)
+.logo img {
+  margin-top:20px;
+}
+.hangribbons {
+  float:right;
+  font-size:1.5em;
+  ul{
+    list-style:none;
+    @include kill-webkit;
+    li {
+      height:60px;
+      width:155px;
+      float:left;
+      padding-top:1em;
+      position:relative;
+      text-align:center;
+      background: url('../images/flag.png') no-repeat center bottom;
+
+      a {
+        color:#fff;
+        text-decoration:none;
+      }
+      .inner {
+        margin:0;
+        z-index:1;
+        font-size:100%;
+        display:none;
+        position:absolute;
+        background: url('../images/flag.png') no-repeat center bottom;
+        height: 180px;
+        width:100%;
+      }
+    }
   }
 }
 div.ribbon {
@@ -271,9 +295,6 @@ header {
 }
 footer {
   width:100%;
-}
-.logos {
-  height:90px;
 }
 
 div.event{
