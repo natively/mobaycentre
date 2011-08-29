@@ -6,6 +6,7 @@
  * ~~Rotating Banner Ads~~
  * Javascript baby!
  * Brand Website
+ * Drop-down flags
  * Content
  * ~~Mobay XML link~~
  * Set up User's account
