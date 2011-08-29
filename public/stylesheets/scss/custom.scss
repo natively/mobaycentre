@@ -5,6 +5,7 @@ $light-blue: #1197d2;
 $pale-green: #9f990b;
 $red: #e05850;
 $sky: #00cee8;
+$brown: #b23e2c;
 /* Mixins */
 @mixin blue-hover {
   &:hover { background-color:$blue; }
@@ -51,7 +52,7 @@ body {
 }
 #body_content {
   h1{
-    color: $blue;
+    color: $brown;
     font-size: 26px;
     font-weight: bold;
   }
@@ -61,12 +62,12 @@ body {
   color: $dark-gray;
   margin-bottom:25px;
   h1{
-    color: $blue;
+    color: $brown;
     font-size: 24px;
     font-weight: bold;
   }
   h2{
-    color: $blue;
+    color: $brown;
     font-size: 20px;
     font-weight: bold;
   }
