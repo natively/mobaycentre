@@ -1,6 +1,4 @@
 class PagesController < ApplicationController
-
-  before_filter :find_all_advertisements
   # This action is usually accessed with the root path, normally '/'
   def home
     featured_upcoming = Event.upcoming.featured
@@ -35,7 +33,5 @@ class PagesController < ApplicationController
     end
   end
 
-  def find_all_advertisements
-    @ads = Advertisement.order('position ASC')
-  end
+
 end
