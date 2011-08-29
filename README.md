@@ -3,7 +3,7 @@
 #### Version 0.5 - Alpha Release Candidate
 
 ### Launch Staging ###
-  * Rotating Banner Ads
+ * Rotating Banner Ads
  * Javascript baby!
  * Brand Website
  * Content
