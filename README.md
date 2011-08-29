@@ -4,10 +4,10 @@
 
 ### Launch Staging ###
  * ~~Rotating Banner Ads~~
- * Javascript baby!
+ * ~~Javascript baby!~~
  * Brand Website
- * Drop-down flags
- * Content
+ * ~~Drop-down flags~~
+ * ~~Content~~
  * ~~Mobay XML link~~
  * Set up User's account
  * Custom Forms
