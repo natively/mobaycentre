@@ -193,36 +193,6 @@ div.ribbon {
   }
 }
 .banner {
-	&.openqt {
-  z-index:1;
-  position:absolute;
-  margin-top: 15px;
-  margin-left: 0px; 
-  }
-  &.caption1 {
-	z-index:1;
-	position:absolute;
-  font-family: "Arial", sans-serif;
-  font-size: 22px;
-	margin-top: 30px;
-	margin-left: 33px;
-	text-shadow: 1px 1px 5px $dark-gray;
-	}
-  &.caption2 {
-  z-index:1;
-  position:absolute;
-  font-family: "Arial", sans-serif;
-  font-size: 22px;
-  margin-top: 55px;
-  margin-left: 50px;
-  text-shadow: 1px 1px 5px $dark-gray;
-  }
-  &.closeqt {
-  z-index:1;
-  position:absolute;
-  margin-top: 50px;
-  margin-left: 405px; 
-  }
 	&.left {
 	float:left;
 	margin-left:-20px;
