@@ -3,12 +3,12 @@
     <ul>
       <li class="date">
         <% if featured_event.end_at.strftime('%b %e') == featured_event.start_at.strftime('%b %e') %>
-          <%= featured_event.start_at.strftime('%b %e').upcase %>
+          <%= featured_event.start_at.strftime('%B %e') %>
         <% else %>
           <%= (featured_event.start_at.strftime('%b %e') + ' - ' + featured_event.end_at.strftime('%b %e')).upcase %>
         <% end %>
       </li>
-      <li><%= featured_event.title.upcase %></li>
+      <li><%= featured_event.title %></li>
       <li><%= featured_event.start_at.strftime('%l %P') + ' - ' + featured_event.end_at.strftime('%l %P')%></li>
       <li><%= link_to '> DETAILS', featured_event -%></li>
     </ul>

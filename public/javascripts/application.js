@@ -9,14 +9,20 @@ jQuery.extend(jQuery.expr[":"],
     }
 });
 
-$(document).ready(function() {
+$(document).ready(function(){
   $('.ads:random').show();
+  
   $('.hangribbons li').bind('mouseenter', function(){
     $(this).find('.inner').show();
   }).bind('mouseleave', function(){
     $(this).find('.inner').hide();
   });
-  $('.ribbon.bigpicture img').hide().load(function() {
-    $(this).fadeIn(1000);
-  });
+
+  if (!($.browser.msie)) {
+    $('#menu').hide();
+    $('.ribbon.bigpicture img').hide().load(function() {
+      $('#menu').fadeIn(1000);
+      $(this).fadeIn(1000);
+    });
+  }
 });
