@@ -19,7 +19,6 @@ $(document).ready(function(){
   });
 
   if (!($.browser.msie)) {
-    $('#menu').hide();
     $('.ribbon.bigpicture img').hide().load(function() {
       $('#menu').fadeIn(1000);
       $(this).fadeIn(1000);
