@@ -7,8 +7,8 @@ $red: #e05850;
 $sky: #00cee8;
 $brown: #b23e2c;
 /* Mixins */
-@mixin blue-hover {
-  &:hover { background-color:$blue; }
+@mixin hover($color) {
+  &:hover { background-color:$color; }
 }
 @mixin ribbon-before-after {
     content:" ";
@@ -38,15 +38,6 @@ $brown: #b23e2c;
 body {
   background: url(../images/bgimg.png);
   font-family:"Arial", sans-serif;
-}
-a {
-  text-decoration: none;
-  &:visited {
-  text-decoration: none;
-  }
-  &:hover {
-    text-decoration: underline;
-  }
 }
 #page {
   width:960px;
@@ -88,9 +79,8 @@ a {
   p,ol,ul{
   font-size: 13.5px;
   line-height: 1.5; 
-  letter-spacing: 0.5px;
   }
-  a{
+  a {
     text-decoration: none;
     &:hover{
       text-decoration: underline;
@@ -108,7 +98,7 @@ a {
     list-style:none;
     line-height: 1.5;
   }
-  a{
+  a {
     text-decoration:none;
     font-size: 18px;
     font-weight: bold;
@@ -273,11 +263,11 @@ header {
   li {
     background-color: $dark-gray;
     margin-right:3px;
-    @include blue-hover;
+    @include hover($blue);
     &.selected {
       font-weight:normal;
       background-color: darken($blue,20%);
-      @include blue-hover;
+      @include hover($blue);
     }
     &.first {
       margin-left: 7px;
@@ -298,7 +288,7 @@ header {
     padding:17px;
     padding-top:15px;
     padding-bottom:15px;
-    display:block;
+    display: block;
     @include ribbon-shadow(0px, 0px, 0px)
   }
 }
