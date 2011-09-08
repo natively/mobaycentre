@@ -1,22 +1,27 @@
 <div class="ribbon foot">
 	<div class="content">
-		<h3>
-			Montego Bay Convention Centre
-		</h3>		
-		<ul>
-			<li>
-				<%= copywriting('street address', { :scope => 'footer', :default => '1234 Main Street, Jamaica, 12345'}) %>
-			</li>
-			<li>
-				Phone: <%= copywriting('phone number', { :scope => 'footer', :default => '1.866.266.5764' }) %>
-			</li>
-			<li>
-				<%= copywriting('email', { :scope => 'footer', :default => 'mobaysales@smgworld.com'}) %>
-			</li>
-		</ul>
-		<p>
-			<%= t('.copyright', :year => Time.now.year,
-		                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
-		</p>                      	
+		<div class="copywriting" style="float:left;">
+			<h3>
+				Montego Bay Convention Centre
+			</h3>
+			<ul>
+				<li>
+					<%= copywriting('street address', { :scope => 'footer', :default => '1234 Main Street, Jamaica, 12345'}) %>
+				</li>
+				<li>
+					Phone: <%= copywriting('phone number', { :scope => 'footer', :default => '1.866.266.5764' }) %>
+				</li>
+				<li>
+					<%= copywriting('email', { :scope => 'footer', :default => 'mobaysales@smgworld.com'}) %>
+				</li>
+			</ul>
+			<p>
+				<%= t('.copyright', :year => Time.now.year,
+			                      :site_name => RefinerySetting.find_or_set(:site_name, "Company Name")) %>
+			</p>			
+		<a style="color:#FFFFFF" href="../">Home</a> &#8226 <a style="color:#FFFFFF" href="../site-map/">Site-Map</a> &#8226 <a style="color:#FFFFFF" href="../photo-credits/">Photo Credits</a> 
+		</div>
+		<%= render :partial => '/shared/ad', :collection => @ads -%>
+
 	</div>
 </div>

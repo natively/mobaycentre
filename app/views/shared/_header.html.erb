@@ -1,43 +1,14 @@
 <div class="ribbon top"></div>
 
 <div class="inner">
-	<%= link_to image_tag("mbcclogo.png", :border=>0), root_path %>
-	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons planners"), root_path %>
-	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons exibitors"), root_path %>
-	<%= link_to image_tag("px.png", :border=>0,  :class=>"hangribbons attendees"), root_path %>
-	<%= render(:partial => "/shared/menu", :locals => {
+  <span class="logo">
+    <%= link_to image_tag("mbcclogo.png", :border=>0), root_path, :class => "logos" %>
+  </span>
+  <%= render :partial => '/shared/drop_flags' %>
+  <%= render(:partial => "/shared/menu", :locals => {
 	         :dom_id => 'menu',
 	         :css => 'menu'
 	       }) %>
 </div>
-<% if current_page?('/') %>
-	<section id="big_images_banner">
-	  <div class="ribbon bigpicture">
-		<%= image_tag("openqt.png", :border=>0,	:class=>"banner openqt") %>
-	    <p class="banner caption1">The Carribean's most sophisticated</p>
-	   	<p class="banner caption2">and sought-after convention facilities</p>
-		<%= image_tag("closeqt.png", :border=>0,	:class=>"banner closeqt") %>
-		<%= image_tag("Banner1.jpg", :border=>0,	:class=>"banner left") %>
-		<%= image_tag("Banner3.jpg", :border=>0,	:class=>"banner topright") %>
-		<%= image_tag("Banner2.jpg", :border=>0,	:class=>"banner bottomright") %>
-	  </div>
-	</section>
-<% end %>
 
-
-
-<% if current_page?('/the-centre') %>
-	<section id="banner_centre">
-	  <div class="ribbon banner">
-		<%= image_tag("centre.jpg", :border=>0,	:class=>"banner left") %>
-	  </div>
-	</section>
-<% end %>
-
-<% if current_page?('/services') %>
-	<section id="banner_centre">
-	  <div class="ribbon banner">
-		<%= image_tag("services.jpg", :border=>0,	:class=>"banner left") %>
-	  </div>
-	</section>
-<% end %>
+<%= render :partial => '/shared/banner' -%>

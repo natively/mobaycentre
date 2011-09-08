@@ -1,0 +1,25 @@
+fr:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    advertisements:
+      title: Advertisements
+  admin:
+    advertisements:
+      actions:
+        create_new: Créer un(e) nouve(au/l/lle) Advertisement
+        reorder: Réordonner les Advertisements
+        reorder_done: Fin de réordonnancement des Advertisements
+      records:
+        title: Advertisements
+        sorry_no_results: "Désolé ! Aucun résultat."
+        no_items_yet: 'Il n''y a actuellement aucun(e) Advertisement. Cliquer sur "Créer un(e) nouve(au/l/lle) Advertisement" pour créer votre premi(er/ère) advertisement.'
+      advertisement:
+        view_live_html: Voir ce(t/tte) advertisement <br/><em>(Ouvre une nouvelle fenêtre)</em>
+        edit: Modifier ce(t/tte) advertisement
+        delete: Supprimer définitivement ce(t/tte) advertisement
+  advertisements:
+    show:
+      other: Autres Advertisements

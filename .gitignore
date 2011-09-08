@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 mobay.sublime-project
+=======
+#backups
+*.backup
+db/*.backup
+
+>>>>>>> master
 .bundle
 db/*.sqlite3
 log/*.log

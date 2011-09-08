@@ -5,7 +5,7 @@ task :cron => :environment do
   require 'open-uri'
 
   # make this the url of your EventListXML stream
-  url = "http://go-xml.smgbooking.com/EventListXml.ashx?wl=3.7FEDB662"
+  url = "http://go.smgbooking.com/EventListXml.ashx?wl=D.3EB50052"
   
   Nokogiri::XML(open(url)).xpath("//event").each do |e|
     puts "Creating " + (e>"event_name").text + "..."

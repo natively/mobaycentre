@@ -5,6 +5,7 @@ $light-blue: #1197d2;
 $pale-green: #9fA90b;
 $red: #e05850;
 $sky: #00cee8;
+$brown: #b23e2c;
 /* Mixins */
 @mixin blue-hover {
   &:hover { background-color:$blue; }
@@ -26,10 +27,13 @@ $sky: #00cee8;
   box-shadow:$x $y $b $color;
 }
 
-@mixin hangribbon($x, $y) {
-  background: url(../images/menusprite_trans.png) $x $y;
+@mixin kill-webkit{
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
 }
-
 /* Content */
 body {
   background: url(../images/bgimg.png);
@@ -46,6 +50,7 @@ a {
 }
 #page {
   width:960px;
+  min-height:500px;
 }
 #page_container {
   background-color:#fff;
@@ -54,52 +59,94 @@ a {
   margin-right:auto;
   @include ribbon-shadow(0px, 0px, 10px);
 }
-#body_content_left {
-  width:660px;
-  color: $dark-gray;
+#body_content {
   h1{
-    color: $blue;
+    color: $brown;
+    font-size: 26px;
+    font-weight: bold;
+  }
+}
+#body_content_left {
+  max-width:660px;
+  color: $dark-gray;
+  margin-bottom:25px;
+  h1{
+    color: $brown;
     font-size: 24px;
     font-weight: bold;
   }
   h2{
-    color: $blue;
+    color: $brown;
     font-size: 20px;
     font-weight: bold;
   }
   h3{
-    color: $dark-gray;
+    color: $blue;
     font-size: 18px;
     font-weight: bold;
   }
   p,ol,ul{
   font-size: 13.5px;
   line-height: 1.5; 
-  letter-spacing: 0.75px;
+  letter-spacing: 0.5px;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 #body_content_right {
   width:300px;
 }
 #side_nav {
+  margin-top: 10px;
   width: 300px;
   float: right;
   ul {
     list-style:none;
+    line-height: 1.5;
+  }
+  a{
+    text-decoration:none;
+    font-size: 18px;
+    font-weight: bold;
   }
 }
-img.hangribbons {
-  width:150px;
-  height:110px;
-  &.planners {
-    margin-left:225px;
-    @include hangribbon(0px,0px)
-  }
-  &.exibitors {
-    @include hangribbon(-150px, 0px)
-  }
-  &.attendees {
-    @include hangribbon(-300px, 0px)
+.logo img {
+  margin-top:20px;
+}
+.hangribbons {
+  float:right;
+  font-size:1.5em;
+  ul{
+    list-style:none;
+    @include kill-webkit;
+    li {
+      height:60px;
+      width:155px;
+      float:left;
+      padding-top:1em;
+      position:relative;
+      text-align:center;
+      background: url('../images/flag.png') no-repeat center bottom;
+
+      a {
+        color:#fff;
+        text-decoration:none;
+      }
+      .inner {
+        margin:0;
+        z-index:1;
+        font-size:100%;
+        display:none;
+        position:absolute;
+        background: url('../images/flag.png') no-repeat center bottom;
+        height: 180px;
+        width:100%;
+      }
+    }
   }
 }
 div.ribbon {
@@ -115,6 +162,7 @@ div.ribbon {
     background:$blue;
     padding:10px 10px 10px 30px;
     margin-left:-20px;
+    z-index:2;
     &:before {
       @include ribbon-before-after;
       background:url(../images/topleft.png);
@@ -129,30 +177,9 @@ div.ribbon {
     }
   }
   &.bigpicture {
-    height:400px;
     padding: 10px 10px 10px 30px;
     margin-left:-20px;
-    margin-bottom:10px;
-    background: #fff;
-    font-size:1.5em;
-    &:before {
-      @include ribbon-before-after;
-      background: url(../images/photoleft.png);
-      left:0;
-      right:auto;
-    }
-    &:after {
-      @include ribbon-before-after;
-      background: url(../images/photoright.png);
-      left: auto;
-      right: 0;
-    }
-  }
-  &.banner {
-    height:200px;
-    padding: 10px 10px 10px 30px;
-    margin-left:-20px;
-    margin-bottom:10px;
+    margin-bottom:40px;
     background: #fff;
     font-size:1.5em;
     &:before {
@@ -175,7 +202,7 @@ div.ribbon {
     
     .content {
       margin-left:30px;
-      text-shadow: 1px 1px 3px $dark-gray;
+      text-shadow: 0px 0px 3px $dark-gray;
       h3 {
         color: #fff;  
       }
@@ -207,47 +234,9 @@ div.ribbon {
   }
 }
 .banner {
-	&.openqt {
-  z-index:1;
-  position:absolute;
-  margin-top: 15px;
-  margin-left: 0px; 
-  }
-  &.caption1 {
-	z-index:1;
-	position:absolute;
-  font-family: "Arial", sans-serif;
-  font-size: 22px;
-	margin-top: 30px;
-	margin-left: 33px;
-	text-shadow: 1px 1px 5px $dark-gray;
-	}
-  &.caption2 {
-  z-index:1;
-  position:absolute;
-  font-family: "Arial", sans-serif;
-  font-size: 22px;
-  margin-top: 55px;
-  margin-left: 50px;
-  text-shadow: 1px 1px 5px $dark-gray;
-  }
-  &.closeqt {
-  z-index:1;
-  position:absolute;
-  margin-top: 50px;
-  margin-left: 405px; 
-  }
 	&.left {
 	float:left;
 	margin-left:-20px;
-	margin-right:auto;
-	}
-	&.topright {
-	float:right;
-	}
-	&.bottomright {
-	float:right;
-	margin-top:10px;
 	}
 }
 header { 
@@ -306,7 +295,7 @@ header {
     text-decoration:none;
     font-weight: bold;
     text-shadow: 1px 1px 3px darken($dark-gray, 20%);
-    padding:16px;
+    padding:17px;
     padding-top:15px;
     padding-bottom:15px;
     display:block;
@@ -315,9 +304,6 @@ header {
 }
 footer {
   width:100%;
-}
-.logos {
-  height:90px;
 }
 
 div.event{
@@ -342,4 +328,31 @@ div.event{
     }
   }
 }
-
+.upcoming_events {
+  ul {
+    list-style:none;
+    padding:0px;
+    margin: 0;
+    margin-bottom:10px;
+    -webkit-padding-start:0px;
+    li {
+      line-height:1.25em;
+      color:$dark-gray;
+      &.date {
+        font-weight:bold;
+        font-size:1.25em;
+      }
+    }
+  }
+  a {
+    text-decoration:none;
+    font-weight:bold;
+    color: $blue;
+    font-size:1em;
+  }
+}
+.ads
+{
+  display:none;
+  float:right;
+}

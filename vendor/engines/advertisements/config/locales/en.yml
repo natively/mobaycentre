@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    advertisements:
+      title: Advertisements
+  admin:
+    advertisements:
+      actions:
+        create_new: Add New Advertisement
+        reorder: Reorder Advertisements
+        reorder_done: Done Reordering Advertisements
+      records:
+        title: Advertisements
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Advertisements yet. Click "Add New Advertisement" to add your first advertisement.
+      advertisement:
+        view_live_html: View this advertisement live <br/><em>(opens in a new window)</em>
+        edit: Edit this advertisement
+        delete: Remove this advertisement forever
+  advertisements:
+    show:
+      other: Other Advertisements

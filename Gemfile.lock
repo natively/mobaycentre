@@ -1,3 +1,8 @@
+PATH
+  remote: vendor/engines
+  specs:
+    refinerycms-advertisements (1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -180,6 +185,7 @@ DEPENDENCIES
   nokogiri
   pg
   refinerycms (~> 1.0.4)
+  refinerycms-advertisements (= 1.0)!
   refinerycms-calendar (~> 1.1.0)
   refinerycms-copywriting
   refinerycms-i18n (~> 1.0.0)

@@ -13,7 +13,8 @@ a {
     text-decoration: underline; }
 
 #page {
-  width: 960px; }
+  width: 960px;
+  min-height: 500px; }
 
 #page_container {
   background-color: #fff;
@@ -25,45 +26,84 @@ a {
   -o-box-shadow: 0px 0px 10px #3b3c3d;
   box-shadow: 0px 0px 10px #3b3c3d; }
 
+#body_content h1 {
+  color: #b23e2c;
+  font-size: 26px;
+  font-weight: bold; }
+
 #body_content_left {
-  width: 660px;
-  color: #3b3c3d; }
+  max-width: 660px;
+  color: #3b3c3d;
+  margin-bottom: 25px; }
   #body_content_left h1 {
-    color: #3b95d0;
+    color: #b23e2c;
     font-size: 24px;
     font-weight: bold; }
   #body_content_left h2 {
-    color: #3b95d0;
+    color: #b23e2c;
     font-size: 20px;
     font-weight: bold; }
   #body_content_left h3 {
-    color: #3b3c3d;
+    color: #3b95d0;
     font-size: 18px;
     font-weight: bold; }
   #body_content_left p, #body_content_left ol, #body_content_left ul {
     font-size: 13.5px;
     line-height: 1.5;
-    letter-spacing: 0.75px; }
+    letter-spacing: 0.5px; }
+  #body_content_left a {
+    text-decoration: none; }
+    #body_content_left a:hover {
+      text-decoration: underline; }
 
 #body_content_right {
   width: 300px; }
 
 #side_nav {
+  margin-top: 10px;
   width: 300px;
   float: right; }
   #side_nav ul {
-    list-style: none; }
+    list-style: none;
+    line-height: 1.5; }
+  #side_nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold; }
 
-img.hangribbons {
-  width: 150px;
-  height: 110px; }
-  img.hangribbons.planners {
-    margin-left: 225px;
-    background: url(../images/menusprite_trans.png) 0px 0px; }
-  img.hangribbons.exibitors {
-    background: url(../images/menusprite_trans.png) -150px 0px; }
-  img.hangribbons.attendees {
-    background: url(../images/menusprite_trans.png) -300px 0px; }
+.logo img {
+  margin-top: 20px; }
+
+.hangribbons {
+  float: right;
+  font-size: 1.5em; }
+  .hangribbons ul {
+    list-style: none;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0; }
+    .hangribbons ul li {
+      height: 60px;
+      width: 155px;
+      float: left;
+      padding-top: 1em;
+      position: relative;
+      text-align: center;
+      background: url("../images/flag.png") no-repeat center bottom; }
+      .hangribbons ul li a {
+        color: #fff;
+        text-decoration: none; }
+      .hangribbons ul li .inner {
+        margin: 0;
+        z-index: 1;
+        font-size: 100%;
+        display: none;
+        position: absolute;
+        background: url("../images/flag.png") no-repeat center bottom;
+        height: 180px;
+        width: 100%; }
 
 div.ribbon {
   position: relative;
@@ -79,7 +119,8 @@ div.ribbon {
     height: 5px;
     background: #3b95d0;
     padding: 10px 10px 10px 30px;
-    margin-left: -20px; }
+    margin-left: -20px;
+    z-index: 2; }
     div.ribbon.top:before {
       content: " ";
       display: block;
@@ -105,10 +146,9 @@ div.ribbon {
       right: 0;
       left: auto; }
   div.ribbon.bigpicture {
-    height: 400px;
     padding: 10px 10px 10px 30px;
     margin-left: -20px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     background: #fff;
     font-size: 1.5em; }
     div.ribbon.bigpicture:before {
@@ -135,37 +175,6 @@ div.ribbon {
       background: url(../images/photoright.png);
       left: auto;
       right: 0; }
-  div.ribbon.banner {
-    height: 200px;
-    padding: 10px 10px 10px 30px;
-    margin-left: -20px;
-    margin-bottom: 10px;
-    background: #fff;
-    font-size: 1.5em; }
-    div.ribbon.banner:before {
-      content: " ";
-      display: block;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      bottom: 0;
-      margin-bottom: -20px;
-      z-index: 2;
-      background: url(../images/photoleft.png);
-      left: 0;
-      right: auto; }
-    div.ribbon.banner:after {
-      content: " ";
-      display: block;
-      width: 20px;
-      height: 20px;
-      position: absolute;
-      bottom: 0;
-      margin-bottom: -20px;
-      z-index: 2;
-      background: url(../images/photoright.png);
-      left: auto;
-      right: 0; }
   div.ribbon.foot {
     margin-left: -20px;
     background: #3b95d0;
@@ -176,7 +185,7 @@ div.ribbon {
     box-shadow: 0px -2px 8px #3b3c3d; }
     div.ribbon.foot .content {
       margin-left: 30px;
-      text-shadow: 1px 1px 3px #3b3c3d; }
+      text-shadow: 0px 0px 3px #3b3c3d; }
       div.ribbon.foot .content h3 {
         color: #fff; }
       div.ribbon.foot .content ul {
@@ -212,41 +221,9 @@ div.ribbon {
       top: -20px;
       bottom: auto; }
 
-.banner.openqt {
-  z-index: 1;
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 0px; }
-.banner.caption1 {
-  z-index: 1;
-  position: absolute;
-  font-family: "Arial", sans-serif;
-  font-size: 22px;
-  margin-top: 30px;
-  margin-left: 33px;
-  text-shadow: 1px 1px 5px #3b3c3d; }
-.banner.caption2 {
-  z-index: 1;
-  position: absolute;
-  font-family: "Arial", sans-serif;
-  font-size: 22px;
-  margin-top: 55px;
-  margin-left: 50px;
-  text-shadow: 1px 1px 5px #3b3c3d; }
-.banner.closeqt {
-  z-index: 1;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 405px; }
 .banner.left {
   float: left;
-  margin-left: -20px;
-  margin-right: auto; }
-.banner.topright {
-  float: right; }
-.banner.bottomright {
-  float: right;
-  margin-top: 10px; }
+  margin-left: -20px; }
 
 header {
   width: 100%; }
@@ -293,7 +270,7 @@ header {
     text-decoration: none;
     font-weight: bold;
     text-shadow: 1px 1px 3px #090909;
-    padding: 16px;
+    padding: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
@@ -304,9 +281,6 @@ header {
 
 footer {
   width: 100%; }
-
-.logos {
-  height: 90px; }
 
 div.event section.event_image {
   float: none; }
@@ -319,3 +293,25 @@ div.event h1 {
   font-size: 2em; }
   div.event h1 a {
     text-decoration: none; }
+
+.upcoming_events ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  margin-bottom: 10px;
+  -webkit-padding-start: 0px; }
+  .upcoming_events ul li {
+    line-height: 1.25em;
+    color: #3b3c3d; }
+    .upcoming_events ul li.date {
+      font-weight: bold;
+      font-size: 1.25em; }
+.upcoming_events a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3b95d0;
+  font-size: 1em; }
+
+.ads {
+  display: none;
+  float: right; }

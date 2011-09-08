@@ -1,0 +1,11 @@
+<% if current_page?('/') %>
+  <div class="ribbon bigpicture">
+    <%= image_tag("a.jpg", :border=>0,  :class=>"banner left") %>
+  </div>
+<% elsif (p = @page.images).present? %>
+  <div class="ribbon bigpicture">
+    <% p.each do |i| -%>
+      <%= image_tag i.thumbnail("1095x200").url, :class => "banner left" -%>
+    <% end -%>
+  </div>
+<% end %>
