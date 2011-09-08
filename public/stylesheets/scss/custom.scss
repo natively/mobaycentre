@@ -52,7 +52,8 @@ body {
 }
 #body_content {
   h1{
-    color: $brown;
+    color: $red;
+    font-family: "Georgia", Serif;
     font-size: 26px;
     font-weight: bold;
   }
@@ -63,6 +64,7 @@ body {
   margin-bottom:25px;
   h1{
     color: $red;
+    font-family: "Georgia", Serif;
     font-size: 24px;
     font-weight: bold;
   }
@@ -89,6 +91,23 @@ body {
 }
 #body_content_right {
   width:300px;
+  color: $dark-gray;
+  margin-bottom:25px;
+  h1,h2,h3{
+    color: $blue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p,ol,ul{
+  font-size: 13.5px;
+  line-height: 1.5; 
+  }
+  a {
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 #side_nav {
   margin-top: 10px;
