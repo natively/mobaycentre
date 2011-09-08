@@ -29,11 +29,11 @@ body {
   color: #3b3c3d;
   margin-bottom: 25px; }
   #body_content_left h1 {
-    color: #b23e2c;
+    color: #e05850;
     font-size: 24px;
     font-weight: bold; }
   #body_content_left h2 {
-    color: #b23e2c;
+    color: #e05850;
     font-size: 20px;
     font-weight: bold; }
   #body_content_left h3 {
@@ -61,7 +61,10 @@ body {
   #side_nav a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #e05850; }
+    #side_nav a:hover {
+      color: #3b95d0; }
 
 .logo img {
   margin-top: 20px; }

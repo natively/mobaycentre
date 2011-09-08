@@ -62,12 +62,12 @@ body {
   color: $dark-gray;
   margin-bottom:25px;
   h1{
-    color: $brown;
+    color: $red;
     font-size: 24px;
     font-weight: bold;
   }
   h2{
-    color: $brown;
+    color: $red;
     font-size: 20px;
     font-weight: bold;
   }
@@ -102,6 +102,10 @@ body {
     text-decoration:none;
     font-size: 18px;
     font-weight: bold;
+    color: $red;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 .logo img {
