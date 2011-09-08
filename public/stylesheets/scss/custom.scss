@@ -2,7 +2,7 @@
 $dark-gray: #3b3c3d;
 $blue: #3b95d0;
 $light-blue: #1197d2;
-$pale-green: #9f990b;
+$pale-green: #9fA90b;
 $red: #e05850;
 $sky: #00cee8;
 /* Mixins */
@@ -34,6 +34,15 @@ $sky: #00cee8;
 body {
   background: url(../images/bgimg.png);
   font-family:"Arial", sans-serif;
+}
+a {
+  text-decoration: none;
+  &:visited {
+  text-decoration: none;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 #page {
   width:960px;

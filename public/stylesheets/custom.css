@@ -5,6 +5,13 @@ body {
   background: url(../images/bgimg.png);
   font-family: "Arial", sans-serif; }
 
+a {
+  text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
 #page {
   width: 960px; }
 
@@ -253,7 +260,7 @@ header {
     color: #1197d2;
     #text-shadow: 1px 1px 1px #3b3c3d; }
   #body_content_right .inner h3.calendar {
-    color: #9f990b;
+    color: #9fa90b;
     #text-shadow: 1px 1px 1px #3b3c3d; }
   #body_content_right .inner h3.rfp {
     color: #e05850;
