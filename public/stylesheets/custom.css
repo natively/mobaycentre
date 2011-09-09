@@ -75,8 +75,10 @@ a {
   margin-top: 20px; }
 
 .hangribbons {
-  float: right;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  position: absolute;
+  right: -53px;
+  top: 26px; }
   .hangribbons ul {
     list-style: none;
     -webkit-margin-before: 0;
@@ -85,13 +87,20 @@ a {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0; }
     .hangribbons ul li {
-      height: 60px;
+      height: 40px;
       width: 155px;
       float: left;
       padding-top: 1em;
       position: relative;
       text-align: center;
-      background: url("../images/flag.png") no-repeat center bottom; }
+      background: #b23e2c;
+      margin-left: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      -moz-border-radius-bottomright: 10px;
+      -moz-border-radius-bottomleft: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px; }
       .hangribbons ul li a {
         color: #fff;
         text-decoration: none; }
@@ -101,9 +110,15 @@ a {
         font-size: 100%;
         display: none;
         position: absolute;
-        background: url("../images/flag.png") no-repeat center bottom;
+        background: #b23e2c;
         height: 180px;
-        width: 100%; }
+        width: 100%;
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px; }
 
 div.ribbon {
   position: relative;
@@ -229,7 +244,8 @@ header {
   width: 100%; }
   header .inner {
     margin-left: 50px;
-    margin-right: 50px; }
+    margin-right: 50px;
+    position: relative; }
 
 #body_content_right .inner h3 {
   width: 100%; }

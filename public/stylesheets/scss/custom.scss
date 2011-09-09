@@ -34,6 +34,17 @@ $brown: #b23e2c;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0;
 }
+
+@mixin border-bottom-radius($radius: 10px)
+{
+  -webkit-border-bottom-right-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-bottom-right-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
 /* Content */
 body {
   background: url(../images/bgimg.png);
@@ -118,20 +129,23 @@ a {
   margin-top:20px;
 }
 .hangribbons {
-  float:right;
-  font-size:1.5em;
+  font-size: 1.5em;
+  position: absolute;
+  right: -53px;
+  top: 26px;
   ul{
     list-style:none;
     @include kill-webkit;
     li {
-      height:60px;
+      height:40px;
       width:155px;
       float:left;
       padding-top:1em;
       position:relative;
       text-align:center;
-      background: url('../images/flag.png') no-repeat center bottom;
-
+      background: $brown;
+      margin-left:10px;
+      @include border-bottom-radius;
       a {
         color:#fff;
         text-decoration:none;
@@ -142,9 +156,10 @@ a {
         font-size:100%;
         display:none;
         position:absolute;
-        background: url('../images/flag.png') no-repeat center bottom;
+        background: $brown;
         height: 180px;
         width:100%;
+        @include border-bottom-radius;
       }
     }
   }
@@ -244,6 +259,7 @@ header {
   .inner {
     margin-left:50px;
     margin-right:50px;
+    position:relative;
   }
 }
 #body_content_right {
