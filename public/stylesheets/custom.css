@@ -87,9 +87,10 @@ body {
 .hangribbons {
   font-size: 1.5em;
   position: absolute;
-  right: -53px;
+  right: -23px;
   top: 26px; }
   .hangribbons ul {
+    margin: 0;
     list-style: none;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;

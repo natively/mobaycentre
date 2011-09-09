@@ -144,9 +144,10 @@ body {
 .hangribbons {
   font-size: 1.5em;
   position: absolute;
-  right: -53px;
+  right: -23px;
   top: 26px;
   ul{
+    margin:0;
     list-style:none;
     @include kill-webkit;
     li {
