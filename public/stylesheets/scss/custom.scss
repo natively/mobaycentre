@@ -159,21 +159,38 @@ body {
       text-align:center;
       background: $brown;
       margin-left:10px;
+      color:#FFFFFF;
       @include border-bottom-radius;
       a {
         color:#fff;
-        text-decoration:none;
+        text-decoration: none;
+        :hover{
+          color:#fff;
+          text-decoration: none;
+        }
       }
       .inner {
         margin:0;
+        padding: 10px 10px;
         z-index:1;
-        font-size:100%;
+        text-align:left;
+        font-size:0.65em;
+        color: #FFFFFF;
         display:none;
         position:absolute;
         background: $brown;
         height: 180px;
-        width:100%;
+        width:135px;
         @include border-bottom-radius;
+        a {
+        font-weight:bold;
+        color:lighten($blue,20%);
+        text-decoration: none;
+        &:hover{
+          color:lighten($blue,20%);
+          text-decoration: underline;
+        }
+      }
       }
     }
   }
