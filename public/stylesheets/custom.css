@@ -5,13 +5,6 @@ body {
   background: url(../images/bgimg.png);
   font-family: "Arial", sans-serif; }
 
-a {
-  text-decoration: none; }
-  a:visited {
-    text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }
-
 #page {
   width: 960px;
   min-height: 500px; }
@@ -27,7 +20,8 @@ a {
   box-shadow: 0px 0px 10px #3b3c3d; }
 
 #body_content h1 {
-  color: #b23e2c;
+  color: #e05850;
+  font-family: "Georgia", Serif;
   font-size: 26px;
   font-weight: bold; }
 
@@ -36,11 +30,12 @@ a {
   color: #3b3c3d;
   margin-bottom: 25px; }
   #body_content_left h1 {
-    color: #b23e2c;
+    color: #e05850;
+    font-family: "Georgia", Serif;
     font-size: 24px;
     font-weight: bold; }
   #body_content_left h2 {
-    color: #b23e2c;
+    color: #e05850;
     font-size: 20px;
     font-weight: bold; }
   #body_content_left h3 {
@@ -49,15 +44,27 @@ a {
     font-weight: bold; }
   #body_content_left p, #body_content_left ol, #body_content_left ul {
     font-size: 13.5px;
-    line-height: 1.5;
-    letter-spacing: 0.5px; }
+    line-height: 1.5; }
   #body_content_left a {
     text-decoration: none; }
     #body_content_left a:hover {
       text-decoration: underline; }
 
 #body_content_right {
-  width: 300px; }
+  width: 300px;
+  color: #3b3c3d;
+  margin-bottom: 25px; }
+  #body_content_right h1, #body_content_right h2, #body_content_right h3 {
+    color: #3b95d0;
+    font-size: 18px;
+    font-weight: bold; }
+  #body_content_right p, #body_content_right ol, #body_content_right ul {
+    font-size: 13.5px;
+    line-height: 1.5; }
+  #body_content_right a {
+    text-decoration: none; }
+    #body_content_right a:hover {
+      text-decoration: underline; }
 
 #side_nav {
   margin-top: 10px;
@@ -69,7 +76,10 @@ a {
   #side_nav a {
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold; }
+    font-weight: bold;
+    color: #e05850; }
+    #side_nav a:hover {
+      color: #3b95d0; }
 
 .logo img {
   margin-top: 20px; }

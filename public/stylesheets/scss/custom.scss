@@ -7,8 +7,8 @@ $red: #e05850;
 $sky: #00cee8;
 $brown: #b23e2c;
 /* Mixins */
-@mixin blue-hover {
-  &:hover { background-color:$blue; }
+@mixin hover($color) {
+  &:hover { background-color:$color; }
 }
 @mixin ribbon-before-after {
     content:" ";
@@ -50,15 +50,6 @@ body {
   background: url(../images/bgimg.png);
   font-family:"Arial", sans-serif;
 }
-a {
-  text-decoration: none;
-  &:visited {
-  text-decoration: none;
-  }
-  &:hover {
-    text-decoration: underline;
-  }
-}
 #page {
   width:960px;
   min-height:500px;
@@ -72,7 +63,8 @@ a {
 }
 #body_content {
   h1{
-    color: $brown;
+    color: $red;
+    font-family: "Georgia", Serif;
     font-size: 26px;
     font-weight: bold;
   }
@@ -82,12 +74,13 @@ a {
   color: $dark-gray;
   margin-bottom:25px;
   h1{
-    color: $brown;
+    color: $red;
+    font-family: "Georgia", Serif;
     font-size: 24px;
     font-weight: bold;
   }
   h2{
-    color: $brown;
+    color: $red;
     font-size: 20px;
     font-weight: bold;
   }
@@ -99,9 +92,8 @@ a {
   p,ol,ul{
   font-size: 13.5px;
   line-height: 1.5; 
-  letter-spacing: 0.5px;
   }
-  a{
+  a {
     text-decoration: none;
     &:hover{
       text-decoration: underline;
@@ -110,6 +102,23 @@ a {
 }
 #body_content_right {
   width:300px;
+  color: $dark-gray;
+  margin-bottom:25px;
+  h1,h2,h3{
+    color: $blue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  p,ol,ul{
+  font-size: 13.5px;
+  line-height: 1.5; 
+  }
+  a {
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }
 #side_nav {
   margin-top: 10px;
@@ -119,10 +128,14 @@ a {
     list-style:none;
     line-height: 1.5;
   }
-  a{
+  a {
     text-decoration:none;
     font-size: 18px;
     font-weight: bold;
+    color: $red;
+    &:hover {
+      color: $blue;
+    }
   }
 }
 .logo img {
@@ -289,11 +302,11 @@ header {
   li {
     background-color: $dark-gray;
     margin-right:3px;
-    @include blue-hover;
+    @include hover($blue);
     &.selected {
       font-weight:normal;
       background-color: darken($blue,20%);
-      @include blue-hover;
+      @include hover($blue);
     }
     &.first {
       margin-left: 7px;
@@ -314,7 +327,7 @@ header {
     padding:17px;
     padding-top:15px;
     padding-bottom:15px;
-    display:block;
+    display: block;
     @include ribbon-shadow(0px, 0px, 0px)
   }
 }
