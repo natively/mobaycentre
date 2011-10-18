@@ -1,3 +1,5 @@
+
+
 <% if (children = @page.root.children).present? -%>
   <% children.keep_if { |c| c.in_menu? } -%>
   <ul class='submenu'> 

@@ -288,7 +288,8 @@ header {
     #text-shadow: 1px 1px 1px #3b3c3d; }
 
 .menu {
-  margin-top: 35px; }
+  margin-top: 35px;
+  margin-left: 7px; }
   .menu li {
     background-color: #3b3c3d;
     margin-right: 3px; }
@@ -300,18 +301,17 @@ header {
       .menu li.selected:hover {
         background-color: #3b95d0; }
     .menu li.first {
-      margin-left: 7px; }
+      margin-left: 0px; }
     .menu li.last {
-      margin-right: 7px; }
-    .menu li ul {
-      display: none; }
+      margin-right: 0px; }
   .menu a {
     font-family: "Tahoma", sans-serif;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     text-shadow: 1px 1px 3px #090909;
-    padding: 17px;
+    padding-left: 17px;
+    padding-right: 17px;
     padding-top: 15px;
     padding-bottom: 15px;
     display: block;
