@@ -155,27 +155,26 @@ body {
         .hangribbons ul li .inner .flaglink {
           position: absolute;
           display: block;
-          background: #ffffff;
           margin-right: auto;
           margin-left: -5px;
-          margin-bottom: 3px;
-          width: 145px;
+          width: 143px;
+          font-weight: bold;
+          background: #fff;
+          color: #b23e2c;
+          text-decoration: none;
           padding: 3px 0px;
-          bottom: 3px;
+          bottom: 5px;
           text-align: center;
+          border: 1px solid #fff;
           -webkit-border-bottom-right-radius: 5px;
           -webkit-border-bottom-left-radius: 5px;
           -moz-border-radius-bottomright: 5px;
           -moz-border-radius-bottomleft: 5px;
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px; }
-        .hangribbons ul li .inner a {
-          font-weight: bold;
-          color: #d05441;
-          text-decoration: none; }
-          .hangribbons ul li .inner a:hover {
-            color: #b23e2c;
-            text-decoration: underline; }
+          .hangribbons ul li .inner .flaglink:hover {
+            background: #b23e2c;
+            color: #FFFFFF; }
 
 div.ribbon {
   position: relative;
