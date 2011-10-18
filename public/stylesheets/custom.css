@@ -107,6 +107,10 @@ body {
       background: #b23e2c;
       margin-left: 10px;
       color: #FFFFFF;
+      -moz-box-shadow: 0px 3px 8px #3b3c3d;
+      -webkit-box-shadow: 0px 3px 8px #3b3c3d;
+      -o-box-shadow: 0px 3px 8px #3b3c3d;
+      box-shadow: 0px 3px 8px #3b3c3d;
       -webkit-border-bottom-right-radius: 10px;
       -webkit-border-bottom-left-radius: 10px;
       -moz-border-radius-bottomright: 10px;
@@ -120,7 +124,9 @@ body {
           color: #fff;
           text-decoration: none; }
       .hangribbons ul li .inner {
-        margin: 0;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
         padding: 10px 10px;
         z-index: 1;
         text-align: left;
@@ -129,14 +135,23 @@ body {
         display: none;
         position: absolute;
         background: #b23e2c;
-        height: 180px;
+        height: 200px;
         width: 135px;
+        -moz-box-shadow: 0px 8px 8px #3b3c3d;
+        -webkit-box-shadow: 0px 8px 8px #3b3c3d;
+        -o-box-shadow: 0px 8px 8px #3b3c3d;
+        box-shadow: 0px 8px 8px #3b3c3d;
         -webkit-border-bottom-right-radius: 10px;
         -webkit-border-bottom-left-radius: 10px;
         -moz-border-radius-bottomright: 10px;
         -moz-border-radius-bottomleft: 10px;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px; }
+        .hangribbons ul li .inner .flagimg {
+          text-align: center; }
+          .hangribbons ul li .inner .flagimg img {
+            margin-top: 5px;
+            border: 1px solid #ffffff; }
         .hangribbons ul li .inner a {
           font-weight: bold;
           color: #8dc1e4;
