@@ -178,6 +178,20 @@ body {
             border: 1px solid #ffffff;
           }
         }
+        .flaglink {
+          position:absolute;
+          display: block;
+          background: #ffffff;
+          margin-right: auto;
+          margin-left: -5px;
+          margin-bottom: 3px;
+          width: 145px;
+          
+          padding: 3px 0px;
+          bottom: 3px;
+          text-align: center;
+          @include border-bottom-radius(5px);
+        }
         margin-top:10px;
         margin-left: 0;
         margin-right: 0;
@@ -195,10 +209,10 @@ body {
         @include border-bottom-radius;
         a {
         font-weight:bold;
-        color:lighten($blue,20%);
+        color:lighten($brown,10%);
         text-decoration: none;
         &:hover{
-          color:lighten($blue,20%);
+          color:$brown;
           text-decoration: underline;
         }
       }

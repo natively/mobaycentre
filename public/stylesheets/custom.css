@@ -152,12 +152,29 @@ body {
           .hangribbons ul li .inner .flagimg img {
             margin-top: 5px;
             border: 1px solid #ffffff; }
+        .hangribbons ul li .inner .flaglink {
+          position: absolute;
+          display: block;
+          background: #ffffff;
+          margin-right: auto;
+          margin-left: -5px;
+          margin-bottom: 3px;
+          width: 145px;
+          padding: 3px 0px;
+          bottom: 3px;
+          text-align: center;
+          -webkit-border-bottom-right-radius: 5px;
+          -webkit-border-bottom-left-radius: 5px;
+          -moz-border-radius-bottomright: 5px;
+          -moz-border-radius-bottomleft: 5px;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px; }
         .hangribbons ul li .inner a {
           font-weight: bold;
-          color: #8dc1e4;
+          color: #d05441;
           text-decoration: none; }
           .hangribbons ul li .inner a:hover {
-            color: #8dc1e4;
+            color: #b23e2c;
             text-decoration: underline; }
 
 div.ribbon {
