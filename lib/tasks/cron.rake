@@ -31,8 +31,8 @@ task :cron => :environment do
   end
 
   # now update the list with featured events
-  fe_url = "http://go.smgbooking.com/EventListXml.ashx?wl=D.3EB50052"&feMode=2"
-  #=> http://go-xml.smgbooking.com/EventListXml.ashx?wl=3.7FEDB662&feMode=2"
+  fe_url = "http://go.smgbooking.com/EventListXml.ashx?wl=D.3EB50052&feMode=2"
+  # => http://go-xml.smgbooking.com/EventListXml.ashx?wl=3.7FEDB662&feMode=2"
   Nokogiri::XML(open(fe_url)).xpath("//event").each do |fe|
     puts "Setting " + (fe>"event_name").text + " as FEATURED"
     Event.find((fe>"unique_event_id").text.to_i).update_attributes(:featured => true)
