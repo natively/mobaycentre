@@ -20,6 +20,7 @@ class Event < ActiveRecord::Base
   validates :ticket_price, :numericality => true, :allow_blank => true
   validates :ticket_link, :format => /^(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?$/ix, :allow_blank => true
   validate :ends_after_start
+  validates_uniqueness_of :id
   
   has_friendly_id :title, :use_slug => true
   
