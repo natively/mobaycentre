@@ -69,13 +69,16 @@ body {
 #side_nav {
   margin-top: 10px;
   width: 300px;
-  float: right; }
+  float: right;
+  margin-left: 25px; }
   #side_nav ul {
     list-style: none;
     line-height: 1.5; }
   #side_nav a {
+    font-family: "Georgia", Serif;
+    font-size: 26px;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
     font-weight: bold;
     color: #e05850; }
     #side_nav a:hover {
