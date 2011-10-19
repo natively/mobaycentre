@@ -1,5 +1,5 @@
 <section class="upcoming_events">
-  <%= div_for featured_event,  do -%>
+  <%= div_for featured_event  do -%>
     <ul>
       <li class="date">
         <% if featured_event.end_at.strftime('%b %e') == featured_event.start_at.strftime('%b %e') %>
