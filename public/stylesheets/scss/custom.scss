@@ -124,13 +124,18 @@ body {
   margin-top: 10px;
   width: 300px;
   float: right;
+  
   ul {
     list-style:none;
     line-height: 1.5;
   }
   a {
+    padding-left: 40px;
+    font-family: "Georgia", Serif;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration:none;
-    font-size: 18px;
+    //font-size: 18px;
     font-weight: bold;
     color: $red;
     &:hover {
@@ -192,11 +197,9 @@ body {
           padding: 3px 0px;
           bottom: 5px;
           text-align: center;
-border: 1px solid #fff;
-          
+          border: 1px solid #fff;
           @include border-bottom-radius(5px);
-          &:hover {
-            
+          &:hover {         
             background: lighten($brown,0%);
             color: #FFFFFF;
           }
