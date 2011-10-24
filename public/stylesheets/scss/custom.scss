@@ -64,7 +64,7 @@ body {
 #body_content {
   h1{
     color: $red;
-    font-family: "Georgia", Serif;
+    font-family: "Arial", Arial, Helvetica, Serif;
     font-size: 26px;
     font-weight: bold;
   }
@@ -75,7 +75,7 @@ body {
   margin-bottom:25px;
   h1{
     color: $red;
-    font-family: "Georgia", Serif;
+    font-family:  "Arial", Arial, Helvetica, Serif;
     font-size: 24px;
     font-weight: bold;
   }
@@ -131,11 +131,10 @@ body {
   }
   a {
     padding-left: 40px;
-    font-family: "Georgia", Serif;
+    font-family:  "Arial", Arial, Helvetica, Serif;
     font-size: 20px;
     font-weight: bold;
     text-decoration:none;
-    //font-size: 18px;
     font-weight: bold;
     color: $red;
     &:hover {

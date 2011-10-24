@@ -21,7 +21,7 @@ body {
 
 #body_content h1 {
   color: #e05850;
-  font-family: "Georgia", Serif;
+  font-family: "Arial", Arial, Helvetica, Serif;
   font-size: 26px;
   font-weight: bold; }
 
@@ -31,7 +31,7 @@ body {
   margin-bottom: 25px; }
   #body_content_left h1 {
     color: #e05850;
-    font-family: "Georgia", Serif;
+    font-family: "Arial", Arial, Helvetica, Serif;
     font-size: 24px;
     font-weight: bold; }
   #body_content_left h2 {
@@ -75,7 +75,7 @@ body {
     line-height: 1.5; }
   #side_nav a {
     padding-left: 40px;
-    font-family: "Georgia", Serif;
+    font-family: "Arial", Arial, Helvetica, Serif;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
