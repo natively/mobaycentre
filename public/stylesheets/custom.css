@@ -389,4 +389,5 @@ div.event h1 {
 
 .ads {
   display: none;
-  float: right; }
+  float: right;
+  padding-right: 15px; }
