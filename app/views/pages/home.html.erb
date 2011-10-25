@@ -8,9 +8,9 @@
   	<div class="inner">
   	  <h3 class="upcoming_events">Upcoming Events</h3>
         <%= render :partial => 'featured_event', :collection => @featured_events -%>
-  	  <h3 class="calendar">Calendar of Events</h3>
-  	  <h3 class="rfp">Request for Proposal</h3>
-  	  <h3 class="video_testimonials">Video Testimonials</h3>
+  	  <h3 class="calendar"><a href="../events">Calendar of Events</a></h3>
+  	  <h3 class="rfp"><a href="../the-centre/forms">Request for Proposal</a></h3>
+  	  <h3 class="video_testimonials"><a href="http://www.youtube.com/watch?v=HMtfy7zi0-M&feature=player_embedded">Video Testimonials</a></h3>
   	  <%= raw @page.content_for :side_body %>
   	</div>
   </section>	

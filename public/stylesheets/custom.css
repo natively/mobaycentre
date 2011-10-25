@@ -308,16 +308,16 @@ header {
 
 #body_content_right .inner h3 {
   width: 100%; }
-  #body_content_right .inner h3.upcoming_events {
+  #body_content_right .inner h3.upcoming_events a {
     color: #1197d2;
     #text-shadow: 1px 1px 1px #3b3c3d; }
-  #body_content_right .inner h3.calendar {
+  #body_content_right .inner h3.calendar a {
     color: #9fa90b;
     #text-shadow: 1px 1px 1px #3b3c3d; }
-  #body_content_right .inner h3.rfp {
+  #body_content_right .inner h3.rfp a {
     color: #e05850;
     #text-shadow: 1px 1px 1px #3b3c3d; }
-  #body_content_right .inner h3.video_testimonials {
+  #body_content_right .inner h3.video_testimonials a {
     color: #00cee8;
     #text-shadow: 1px 1px 1px #3b3c3d; }
 

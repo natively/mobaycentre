@@ -324,19 +324,19 @@ header {
   .inner h3
   {
     width: 100%;
-    &.upcoming_events {
+    &.upcoming_events a {
       color: $light-blue;
       #text-shadow: 1px 1px 1px $dark-gray;
     }
-    &.calendar {
+    &.calendar a {
       color: $pale-green;
       #text-shadow: 1px 1px 1px $dark-gray;
     }
-    &.rfp {
+    &.rfp a {
       color: $red;
       #text-shadow: 1px 1px 1px $dark-gray;
     }
-    &.video_testimonials {
+    &.video_testimonials a {
       color: $sky;
       #text-shadow: 1px 1px 1px $dark-gray;
     }
