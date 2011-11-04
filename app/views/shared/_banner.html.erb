@@ -1,6 +1,19 @@
 <% if current_page?('/') %>
-  <div class="ribbon bigpicture">
-    <%= image_tag("a.jpg", :border=>0,  :class=>"banner left") %>
+  <div class="main_view ribbon bigpicture">
+    <div class="window ">
+      <div class="image_reel">
+        <%= image_tag("a.jpg", :border=>0,  :class=>"banner left") %>
+        <%= image_tag("b.jpg", :border=>0,  :class=>"banner left") %>
+        <%= image_tag("c.jpg", :border=>0,  :class=>"banner left") %>
+        <%= image_tag("d.jpg", :border=>0,  :class=>"banner left") %>
+      </div>
+    </div>
+    <div class="paging">
+        <a href="#" rel="1"></a>
+        <a href="#" rel="2"></a>
+        <a href="#" rel="3"></a>
+        <a href="#" rel="4"></a>
+    </div>
   </div>
 <% elsif (p = @page.images).present? %>
   <div class="ribbon bigpicture">
