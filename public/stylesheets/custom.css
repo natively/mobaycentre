@@ -225,6 +225,8 @@ div.ribbon {
     margin-bottom: 40px;
     background: #fff;
     font-size: 1.5em; }
+    div.ribbon.bigpicture.secondary {
+      padding: 10px 30px 10px 10px; }
     div.ribbon.bigpicture:before {
       content: " ";
       display: block;

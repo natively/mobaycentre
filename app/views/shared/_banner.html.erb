@@ -16,7 +16,7 @@
     </div>
   </div>
 <% elsif (p = @page.images).present? %>
-  <div class="ribbon bigpicture">
+  <div class="ribbon bigpicture secondary">
     <% p.each do |i| -%>
       <%= image_tag i.thumbnail("1095x200").url, :class => "banner left" -%>
     <% end -%>

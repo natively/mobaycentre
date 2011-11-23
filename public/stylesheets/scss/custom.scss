@@ -255,6 +255,9 @@ div.ribbon {
     margin-bottom:40px;
     background: #fff;
     font-size:1.5em;
+    &.secondary {
+      padding: 10px 30px 10px 10px;
+    }
     &:before {
       @include ribbon-before-after;
       background: url(../images/photoleft.png);
