@@ -2,3 +2,7 @@
   Override default refinery application CSS below.
   Formatting applies to all frontend.
 */
+
+#page, #site_bar_content, #page_container > footer, #page_container > header {
+  width:100%;
+}

@@ -27,7 +27,7 @@ $brown: #b23e2c;
   box-shadow:$x $y $b $color;
 }
 
-@mixin kill-webkit{
+@mixin kill-webkit {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0px;

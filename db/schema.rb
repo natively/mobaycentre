@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111019143222) do
+ActiveRecord::Schema.define(:version => 20110826153815) do
 
   create_table "advertisements", :force => true do |t|
     t.string   "title"
@@ -192,16 +192,6 @@ ActiveRecord::Schema.define(:version => 20111019143222) do
   add_index "pages", ["lft"], :name => "index_pages_on_lft"
   add_index "pages", ["parent_id"], :name => "index_pages_on_parent_id"
   add_index "pages", ["rgt"], :name => "index_pages_on_rgt"
-
-  create_table "pages_images", :force => true do |t|
-    t.integer  "page_id"
-    t.integer  "image_id"
-    t.integer  "position"
-    t.string   "chunk"
-    t.string   "caption"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "portfolio_entries", :force => true do |t|
     t.string   "title"
