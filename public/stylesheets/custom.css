@@ -418,7 +418,7 @@ div.event h1 {
 .image_reel img {
   float: left; }
 
-div.paging .gallery {
+div.paging.gallery {
   margin-top: 3em; }
 
 .paging a {
