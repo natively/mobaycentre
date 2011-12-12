@@ -5,7 +5,7 @@
     <% end %>
   </div>
 </div>
-<div class="paging">
+<div class="paging gallery">
   <% @page.images.each_with_index do |img, i| %>
     <a class="gallery" href="#" rel="<%= i+1 %>"><%= image_tag img.thumbnail("110x110#").url %></a>
   <% end %>
