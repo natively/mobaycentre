@@ -15,6 +15,8 @@
         <a href="#" rel="4"></a>
     </div>
   </div>
+<% elsif current_page?('/photo-gallery') %>
+  <% # do nothing %>
 <% elsif (p = @page.images).present? %>
   <div class="ribbon bigpicture secondary">
     <% p.each do |i| -%>
