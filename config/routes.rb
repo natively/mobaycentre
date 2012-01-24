@@ -1,4 +1,5 @@
 Mobaycentre::Application.routes.draw do
+  match '/photo-gallery', :to => 'pages#photo_gallery'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -6,6 +6,10 @@ class PagesController < ApplicationController
     @featured_events = (featured_upcoming | featured_current).sort { |a,b| a.start_at <=> b.start_at }
     error_404 unless (@page = Page.where(:link_url => '/').first).present?
   end
+  
+  def photo_gallery
+    @page = Page.find("photo-gallery")
+  end
 
   # This action can be accessed normally, or as nested pages.
   # Assuming a page named "mission" that is a child of "about",
@@ -32,6 +36,4 @@ class PagesController < ApplicationController
       error_404
     end
   end
-
-
 end

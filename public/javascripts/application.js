@@ -26,7 +26,7 @@ $(document).ready(function(){
   var imageWidth = $(".window").width();
   var imageSum = $(".image_reel img").size();
   var imageReelWidth = imageWidth * imageSum;
-
+  
   //Adjust the image reel to its new size
   $(".image_reel").css({'width' : imageReelWidth});
   //Paging  and Slider Function
