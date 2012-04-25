@@ -60,7 +60,7 @@ gem 'refinerycms-portfolio',	'~> 0.9.9'
 gem 'refinerycms-inquiries',    '~> 1.0'
 gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'refinerycms-calendar',	'~> 1.1.0'
-gem 'refinerycms-copywriting'
+gem 'refinerycms-copywriting', '~> 1.0.9'
 gem 'refinerycms-page-images',	'~> 1.0'
 # END USER DEFINED
 
