@@ -32,7 +32,7 @@ gem 'fog'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              '~> 1.0.9'
+gem 'refinerycms',              '1.0.9'
 
 group :production do
   gem 'pg'
@@ -61,8 +61,8 @@ gem 'refinerycms-inquiries',    '~> 1.0'
 gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'refinerycms-calendar',	'~> 1.1.0'
 gem 'refinerycms-copywriting', '~> 1.0.9'
-gem 'refinerycms-page-images',  '~> 1.0'
-gem 'refinerycms-pages', '~> 1.0.9'
+gem 'refinerycms-page-images',	'~> 1.0'
+gem 'refinerycms-pages', '1.0.9'
 # END USER DEFINED
 
-gem 'refinerycms-advertisements', '1.0', :path => 'vendor/engines'
+gem 'refinerycms-advertisements', '~>1.0', :path => 'vendor/engines'
