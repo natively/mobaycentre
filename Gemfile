@@ -1,33 +1,34 @@
 source 'http://rubygems.org'
 
-# gem 'rails', '3.0.10'
+gem 'rails', '3.0.11'
+gem 'actionmailer', '3.0.11'
+gem 'actionpack', '3.0.11'
+gem 'activemodel', '3.0.11'
+gem 'activesupport', '3.0.11'
+gem 'activeresource', '3.0.11'
+gem 'acts_as_indexed', '0.7.7'
+gem 'awesome_nested_set', '2.0.2'
+gem 'babosa', '0.3.5'
+gem 'dragonfly', '0.9.8'
+gem 'excon', '0.7.6'
+gem 'fog', '1.1.1'
+gem 'mime-types', '1.17.2'
+gem 'multi_json', '1.0.3'
+gem 'net-ssh', '2.2.1'
+gem 'nokogiri', '1.5.0'
+gem 'orm_adapter', '0.0.5'
+gem 'railties', '3.0.11'
+gem 'rdoc', '3.11'
+gem 'routing-filter', '0.2.4'
+gem 'seo_meta', '1.1.1'
+gem 'refinerycms-generators', '1.0.1'
+gem 'truncate_html', '0.5.1'
+gem 'tzinfo', '0.3.31'
+gem 'will_paginate', '3.0.2'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-# gem 'ruby-debug'
-# gem 'ruby-debug19', :require => 'ruby-debug'
-
-# Bundle the extra gems:
-# gem 'bj'
-gem 'nokogiri'
-gem 'fog'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+gem 'rack', '1.2.1'
+gem 'rack-cache', '1.1'
 
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
@@ -35,28 +36,15 @@ gem 'fog'
 gem 'refinerycms',              '1.0.9'
 
 group :production do
-  gem 'pg'
+  gem 'pg', '0.11.0'
 end
 
 group :development, :test do
-  gem 'sqlite3'
-  # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
-  # Then, run 'rails generate refinerycms_testing' which will copy its support files.
-  # Finally, run 'rake' to run the tests.
-  # gem 'refinerycms-testing',    '~> 1.0.1'
+  gem 'sqlite3', '1.3.4'
 end
 
-# END REFINERY CMS ============================================================
-
-# USER DEFINED
-
-
-# Specify additional Refinery CMS Engines here (all optional):
-# gem "refinerycms-news",         '~> 1.2'
-# gem 'refinerycms-blog',         '~> 1.6'
-
 # Add i18n support (optional, you can remove this if you really want to).
-gem 'refinerycms-portfolio',	'~> 0.9.9'
+gem 'refinerycms-portfolio',    '0.9.9'
 gem 'refinerycms-inquiries',    '~> 1.0'
 gem 'refinerycms-i18n',         '~> 1.0.0'
 gem 'refinerycms-calendar',	'~> 1.1.0'
